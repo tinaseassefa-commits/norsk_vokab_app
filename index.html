@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Norsk Master</title>
+    <style>
+        /* (Keep your existing CSS here) */
+        :root { --no-red: #BA0C2F; --no-blue: #00205B; --white: #FFFFFF; }
+        body { font-family: 'Inter', sans-serif; background: #f5f7fa; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .card { background: var(--white); border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); width: 350px; padding: 2rem; text-align: center; }
+        #word-image { width: 100%; height: 200px; object-fit: cover; border-radius: 15px; margin: 1.5rem 0; background: #eee; }
+        .info-box { background: #f9f9f9; padding: 1rem; border-radius: 10px; text-align: left; margin-bottom: 1.5rem; }
+        button { background: var(--no-red); color: white; border: none; padding: 12px 25px; border-radius: 10px; cursor: pointer; width: 100%; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <span id="category" style="background: #00205B; color: white; padding: 5px 10px; border-radius: 10px; font-size: 0.8rem;">Category</span>
+        <img id="word-image" src="" alt="Word Image">
+        <h1 id="norwegian-word" style="color: #BA0C2F;">Loading...</h1>
+        <p id="english-meaning" style="font-style: italic; color: #555;">Fetching...</p>
+        
+        <button onclick="playAudio()" style="background:none; color: #00205B; text-decoration: underline; margin-bottom: 10px;">🔊 Hear Pronunciation</button>
+
+        <div class="info-box">
+            <!-- Norwegian Example is bold, English is gray -->
+            <strong>Example:</strong> 
+            <p id="example-norsk" style="margin: 5px 0 0 0; color: #00205B; font-weight: bold;"></p>
+            <p id="example-english" style="margin: 0 0 10px 0; color: #666; font-size: 0.9rem;"></p>
+            
+            <strong>Fact:</strong> <span id="fun-fact">...</span>
+        </div>
+
+        <button onclick="getNextWord()">Next Word</button>
+    </div>
+
+    <script>
+        let currentAudioPath = "";
+
+        async function getNextWord() {
+            try {
+                const response = await fetch('http://127.0.0.1:8000/word-of-the-day');
+                const data = await response.json();
+
+                // 1. Text updates
+                document.getElementById('category').innerText = data.family;
+                document.getElementById('norwegian-word').innerText = data.word;
+                document.getElementById('english-meaning').innerText = data.meaning;
+                document.getElementById('example-norsk').innerText = data.example_norsk;
+                document.getElementById('example-english').innerText = data.example;
+                document.getElementById('fun-fact').innerText = data.fun_fact;
+                
+                // 2. Image update (using the direct link from Python)
+                document.getElementById('word-image').src = data.image;
+                
+                // 3. Audio update
+                currentAudioPath = `http://127.0.0.1:8000${data.audio}`;
+
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Backend not running!");
+            }
+        }
+
+        function playAudio() {
+            if (currentAudioPath) {
+                const audio = new Audio(currentAudioPath);
+                audio.play();
+            }
+        }
+
+        getNextWord(); // Start first word
+    </script>
+</body>
+</html>

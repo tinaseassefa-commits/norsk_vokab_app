@@ -1,0 +1,1136 @@
+{
+  "Food": [
+    {
+      "word": "Brød",
+      "meaning": "Bread",
+      "example_norsk": "Jeg spiser ferskt brød til frokost.",
+      "example": "I eat fresh bread for breakfast.",
+      "fun_fact": "Bread is a staple of the Norwegian diet, often served as 'matpakke'.",
+      "image_keyword": "bread"
+    },
+    {
+      "word": "Vann",
+      "meaning": "Water",
+      "example_norsk": "Kan jeg få et glass vann?",
+      "example": "Can I have a glass of water?",
+      "fun_fact": "Norway has some of the cleanest tap water in the world.",
+      "image_keyword": "glass water"
+    },
+    {
+      "word": "Kaffe",
+      "meaning": "Coffee",
+      "example_norsk": "Nordmenn drikker veldig mye kaffe.",
+      "example": "Norwegians drink a lot of coffee.",
+      "fun_fact": "Norway is one of the top coffee-consuming nations per capita.",
+      "image_keyword": "coffee cup"
+    },
+    {
+      "word": "Melk",
+      "meaning": "Milk",
+      "example_norsk": "Barnet drikker et glass melk.",
+      "example": "The child is drinking a glass of milk.",
+      "fun_fact": "Tine is the largest dairy cooperative in Norway.",
+      "image_keyword": "milk"
+    },
+    {
+      "word": "Eple",
+      "meaning": "Apple",
+      "example_norsk": "Eplet er rødt og søtt.",
+      "example": "The apple is red and sweet.",
+      "fun_fact": "Hardanger is famous for its delicious Norwegian apples.",
+      "image_keyword": "apple"
+    }
+  ],
+  "Animals": [
+    {
+      "word": "Hund",
+      "meaning": "Dog",
+      "example_norsk": "Hunden løper i hagen.",
+      "example": "The dog is running in the garden.",
+      "fun_fact": "The Lundehund is a unique Norwegian breed with six toes on each foot.",
+      "image_keyword": "dog"
+    },
+    {
+      "word": "Katt",
+      "meaning": "Cat",
+      "example_norsk": "Katten sover på sofaen.",
+      "example": "The cat is sleeping on the sofa.",
+      "fun_fact": "The Norwegian Forest Cat is known for its thick, water-repellent fur.",
+      "image_keyword": "cat"
+    },
+    {
+      "word": "Elg",
+      "meaning": "Moose",
+      "example_norsk": "Elgen er skogens konge.",
+      "example": "The moose is the king of the forest.",
+      "fun_fact": "There are over 100,000 moose in Norway.",
+      "image_keyword": "moose"
+    },
+    {
+      "word": "Fugl",
+      "meaning": "Bird",
+      "example_norsk": "Fuglen synger i treet.",
+      "example": "The bird is singing in the tree.",
+      "fun_fact": "The White-throated Dipper (Fossekall) is Norway's national bird.",
+      "image_keyword": "bird"
+    },
+    {
+      "word": "Bjørn",
+      "meaning": "Bear",
+      "example_norsk": "Bjørnen sover hele vinteren.",
+      "example": "The bear sleeps all winter.",
+      "fun_fact": "Brown bears can still be found in remote parts of Norway.",
+      "image_keyword": "bear"
+    }
+  ],
+  "Work": [
+    {
+      "word": "Skole",
+      "meaning": "School",
+      "example_norsk": "Barna går til skolen hver morgen.",
+      "example": "The children go to school every morning.",
+      "fun_fact": "School is mandatory in Norway from ages 6 to 16.",
+      "image_keyword": "school building"
+    },
+    {
+      "word": "Jobb",
+      "meaning": "Job/Work",
+      "example_norsk": "Jeg trives veldig godt i jobben min.",
+      "example": "I enjoy my job very much.",
+      "fun_fact": "Norway has a strong 'flat hierarchy' at work, meaning bosses and employees are quite equal.",
+      "image_keyword": "office"
+    },
+    {
+      "word": "Lærer",
+      "meaning": "Teacher",
+      "example_norsk": "Læreren forklarer oppgaven.",
+      "example": "The teacher explains the task.",
+      "fun_fact": "Teachers in Norway focus a lot on outdoor learning and 'friluftsliv'.",
+      "image_keyword": "teacher"
+    },
+    {
+      "word": "Penger",
+      "meaning": "Money",
+      "example_norsk": "Jeg må spare penger til ferien.",
+      "example": "I need to save money for the vacation.",
+      "fun_fact": "The Norwegian currency is the 'Krone', and Norway is almost a cashless society.",
+      "image_keyword": "coins"
+    },
+    {
+      "word": "Blyant",
+      "meaning": "Pencil",
+      "example_norsk": "Kan jeg låne en blyant?",
+      "example": "Can I borrow a pencil?",
+      "fun_fact": "In Norway, the first day of school is a huge celebration for first-graders.",
+      "image_keyword": "pencil"
+    }
+  ],
+  "City": [
+    {
+      "word": "Butikk",
+      "meaning": "Shop/Store",
+      "example_norsk": "Butikken stenger klokken åtte.",
+      "example": "The shop closes at eight o'clock.",
+      "fun_fact": "Most grocery stores in Norway are closed on Sundays.",
+      "image_keyword": "store"
+    },
+    {
+      "word": "Gate",
+      "meaning": "Street",
+      "example_norsk": "Dette er en travel gate.",
+      "example": "This is a busy street.",
+      "fun_fact": "Karl Johans gate is the main street in Oslo.",
+      "image_keyword": "street"
+    },
+    {
+      "word": "Kirke",
+      "meaning": "Church",
+      "example_norsk": "Kirken er veldig gammel.",
+      "example": "The church is very old.",
+      "fun_fact": "Norway is famous for its 'Stave Churches' (stavkirke) made of wood.",
+      "image_keyword": "stave church"
+    },
+    {
+      "word": "Sykehus",
+      "meaning": "Hospital",
+      "example_norsk": "Sykehuset ligger i sentrum.",
+      "example": "The hospital is located in the city center.",
+      "fun_fact": "Healthcare in Norwegian hospitals is free for all residents.",
+      "image_keyword": "hospital"
+    },
+    {
+      "word": "Restaurant",
+      "meaning": "Restaurant",
+      "example_norsk": "Vi skal spise på restaurant i kveld.",
+      "example": "We are going to eat at a restaurant tonight.",
+      "fun_fact": "Tipping is appreciated in Norway but not mandatory like in the US.",
+      "image_keyword": "restaurant"
+    }
+  ],
+  "Colors": [
+    {
+      "word": "Svart",
+      "meaning": "Black",
+      "example_norsk": "Katten min er helt svart.",
+      "example": "My cat is completely black.",
+      "fun_fact": "Licorice (lakris) is a very popular black candy in Norway.",
+      "image_keyword": "black cat"
+    },
+    {
+      "word": "Grå",
+      "meaning": "Grey",
+      "example_norsk": "Himmelen er grå i dag.",
+      "example": "The sky is grey today.",
+      "fun_fact": "The word 'gråvær' (grey weather) is common for overcast days.",
+      "image_keyword": "grey clouds"
+    },
+    {
+      "word": "Brun",
+      "meaning": "Brun",
+      "example_norsk": "Bjørnen har brun pels.",
+      "example": "The bear has brown fur.",
+      "fun_fact": "Brunost (brown cheese) is an iconic Norwegian food made from whey.",
+      "image_keyword": "brown cheese"
+    },
+    {
+      "word": "Oransje",
+      "meaning": "Orange",
+      "example_norsk": "Appelsinen er oransje.",
+      "example": "The orange is orange.",
+      "fun_fact": "Oranges are a traditional snack during Easter skiing trips.",
+      "image_keyword": "orange fruit"
+    },
+    {
+      "word": "Lilla",
+      "meaning": "Purple",
+      "example_norsk": "Blomsten er vakker og lilla.",
+      "example": "The flower is beautiful and purple.",
+      "fun_fact": "Purple is the traditional color of Advent in Norway.",
+      "image_keyword": "purple flower"
+    }
+  ],
+  "Verbs": [
+    {
+      "word": "Løpe",
+      "meaning": "To Run",
+      "example_norsk": "Jeg liker å løpe i skogen.",
+      "example": "I like to run in the forest.",
+      "fun_fact": "Norway holds many world records in middle-distance running.",
+      "image_keyword": "running"
+    },
+    {
+      "word": "Lese",
+      "meaning": "To Read",
+      "example_norsk": "Han leser avisen hver morgen.",
+      "example": "He reads the newspaper every morning.",
+      "fun_fact": "'Påskekrim' is a tradition where Norwegians read crime novels during Easter.",
+      "image_keyword": "reading"
+    },
+    {
+      "word": "Skrive",
+      "meaning": "To Write",
+      "example_norsk": "Jeg skriver et brev til bestemor.",
+      "example": "I am writing a letter to grandmother.",
+      "fun_fact": "The Norwegian alphabet has three extra letters: Æ, Ø, and Å.",
+      "image_keyword": "writing"
+    },
+    {
+      "word": "Snakke",
+      "meaning": "To Speak/Talk",
+      "example_norsk": "Kan du snakke norsk?",
+      "example": "Can you speak Norwegian?",
+      "fun_fact": "There are hundreds of different dialects in Norway.",
+      "image_keyword": "talking"
+    },
+    {
+      "word": "Sove",
+      "meaning": "To Sleep",
+      "example_norsk": "Jeg må sove nå.",
+      "example": "I have to sleep now.",
+      "fun_fact": "Babies in Norway often nap outside in their strollers, even in winter!",
+      "image_keyword": "sleeping"
+    }
+  ],
+  "Furniture": [
+    {
+      "word": "Bord",
+      "meaning": "Table",
+      "example_norsk": "Maten står på bordet.",
+      "example": "The food is on the table.",
+      "fun_fact": "Scandinavian design often uses light-colored wood for tables.",
+      "image_keyword": "wooden table"
+    },
+    {
+      "word": "Stol",
+      "meaning": "Chair",
+      "example_norsk": "Sett deg på stolen.",
+      "example": "Sit down on the chair.",
+      "fun_fact": "Peter Opsvik is a famous Norwegian designer who made the Tripp Trapp chair.",
+      "image_keyword": "chair"
+    },
+    {
+      "word": "Sofa",
+      "meaning": "Sofa/Couch",
+      "example_norsk": "Vi slapper av i sofaen.",
+      "example": "We are relaxing on the sofa.",
+      "fun_fact": "The word 'koselig' often involves sitting on a sofa with a blanket.",
+      "image_keyword": "cozy sofa"
+    },
+    {
+      "word": "Hylle",
+      "meaning": "Shelf",
+      "example_norsk": "Bøkene står i hylla.",
+      "example": "The books are on the shelf.",
+      "fun_fact": "Modular shelving units are a staple of Norwegian interior design.",
+      "image_keyword": "bookshelf"
+    },
+    {
+      "word": "Lampe",
+      "meaning": "Lamp",
+      "example_norsk": "Lampen gir et varmt lys.",
+      "example": "The lamp gives off a warm light.",
+      "fun_fact": "Lighting is very important in Norway due to the dark winter months.",
+      "image_keyword": "lamp"
+    }
+  ],
+  "Kitchen_Tools": [
+    {
+      "word": "Gaffel",
+      "meaning": "Fork",
+      "example_norsk": "Jeg spiser salat med en gaffel.",
+      "example": "I eat salad with a fork.",
+      "fun_fact": "Traditional Norwegian silver forks often have intricate patterns.",
+      "image_keyword": "fork"
+    },
+    {
+      "word": "Skje",
+      "meaning": "Spoon",
+      "example_norsk": "Kan jeg få en skje til suppen?",
+      "example": "Can I have a spoon for the soup?",
+      "fun_fact": "Wooden spoons are common for stirring 'grøt' (porridge).",
+      "image_keyword": "spoon"
+    },
+    {
+      "word": "Tallerken",
+      "meaning": "Plate",
+      "example_norsk": "Sett tallerkenen i oppvaskmaskinen.",
+      "example": "Put the plate in the dishwasher.",
+      "fun_fact": "A 'flatbrød' is a traditional crispy bread served on a side plate.",
+      "image_keyword": "dinner plate"
+    },
+    {
+      "word": "Kopp",
+      "meaning": "Cup/Mug",
+      "example_norsk": "Vil du ha en kopp kaffe?",
+      "example": "Do you want a cup of coffee?",
+      "fun_fact": "Norwegians love 'turkopp', a wooden cup used for hiking.",
+      "image_keyword": "coffee mug"
+    },
+    {
+      "word": "Glass",
+      "meaning": "Glass",
+      "example_norsk": "Glasset er fullt av juice.",
+      "example": "The glass is full of juice.",
+      "fun_fact": "Hadeland Glassverk is one of Norway's oldest industrial companies.",
+      "image_keyword": "water glass"
+    }
+  ],
+  "Geography": [
+    {
+      "word": "Land",
+      "meaning": "Country",
+      "example_norsk": "Norge er et vakkert land.",
+      "example": "Norway is a beautiful country.",
+      "fun_fact": "Norway shares borders with Sweden, Finland, and Russia.",
+      "image_keyword": "norway map"
+    },
+    {
+      "word": "By",
+      "meaning": "City",
+      "example_norsk": "Oslo er den største byen i Norge.",
+      "example": "Oslo is the largest city in Norway.",
+      "fun_fact": "Bergen and Trondheim were both capitals of Norway before Oslo.",
+      "image_keyword": "city skyline"
+    },
+    {
+      "word": "Hovedstad",
+      "meaning": "Capital",
+      "example_norsk": "Oslo er hovedstaden i Norge.",
+      "example": "Oslo is the capital of Norway.",
+      "fun_fact": "The Royal Palace is located at the end of the main street in the capital.",
+      "image_keyword": "oslo palace"
+    },
+    {
+      "word": "Verden",
+      "meaning": "World",
+      "example_norsk": "Jeg vil reise rundt i verden.",
+      "example": "I want to travel around the world.",
+      "fun_fact": "Norway is one of the northernmost countries in the world.",
+      "image_keyword": "globe"
+    },
+    {
+      "word": "Kart",
+      "meaning": "Map",
+      "example_norsk": "Vi må se på kartet.",
+      "example": "We have to look at the map.",
+      "fun_fact": "Paper maps are still popular for hiking in the Norwegian mountains.",
+      "image_keyword": "map"
+    }
+  ],
+  "Post_Office": [
+    {
+      "word": "Brev",
+      "meaning": "Letter",
+      "example_norsk": "Jeg fikk et brev i posten.",
+      "example": "I received a letter in the mail.",
+      "fun_fact": "Posten Norge was founded in 1647.",
+      "image_keyword": "envelope"
+    },
+    {
+      "word": "Pakke",
+      "meaning": "Package/Parcel",
+      "example_norsk": "Pakken er til deg.",
+      "example": "The package is for you.",
+      "fun_fact": "Most Norwegians pick up packages at 'Post i Butikk' (post inside a grocery store).",
+      "image_keyword": "cardboard box"
+    },
+    {
+      "word": "Frimerke",
+      "meaning": "Stamp",
+      "example_norsk": "Husk å sette på frimerke.",
+      "example": "Remember to put on a stamp.",
+      "fun_fact": "The first Norwegian postage stamp was issued in 1855.",
+      "image_keyword": "postage stamp"
+    },
+    {
+      "word": "Adresse",
+      "meaning": "Address",
+      "example_norsk": "Hva er adressen din?",
+      "example": "What is your address?",
+      "fun_fact": "Norwegian addresses always include a four-digit postal code.",
+      "image_keyword": "house number"
+    },
+    {
+      "word": "Postkasse",
+      "meaning": "Mailbox",
+      "example_norsk": "Postkassen er tom.",
+      "example": "The mailbox is empty.",
+      "fun_fact": "Green is the standard color for private mailboxes in Norway.",
+      "image_keyword": "mailbox"
+    }
+  ],
+  "In_The_Garden": [
+    {
+      "word": "Blomst",
+      "meaning": "Flower",
+      "example_norsk": "Blomsten lukter godt.",
+      "example": "The flower smells good.",
+      "fun_fact": "Heather (røsslyng) is the national flower of Norway.",
+      "image_keyword": "flower"
+    },
+    {
+      "word": "Tre",
+      "meaning": "Tree",
+      "example_norsk": "Treet har mange blader.",
+      "example": "The tree has many leaves.",
+      "fun_fact": "The 'Old Tjikko' spruce is one of the oldest trees in the world (found in Scandinavia).",
+      "image_keyword": "tree"
+    },
+    {
+      "word": "Gress",
+      "meaning": "Grass",
+      "example_norsk": "Gresset må klippes.",
+      "example": "The grass needs to be mowed.",
+      "fun_fact": "Some traditional Norwegian houses have grass growing on the roof (torvtak).",
+      "image_keyword": "green grass"
+    },
+    {
+      "word": "Hage",
+      "meaning": "Garden",
+      "example_norsk": "Vi sitter ute i hagen.",
+      "example": "We are sitting outside in the garden.",
+      "fun_fact": "Having a garden is a very common way for Norwegians to enjoy the summer.",
+      "image_keyword": "garden"
+    },
+    {
+      "word": "Stein",
+      "meaning": "Stone/Rock",
+      "example_norsk": "Det er en stor stein på stien.",
+      "example": "There is a large stone on the path.",
+      "fun_fact": "Norway's mountains are mostly made of ancient granite and gneiss.",
+      "image_keyword": "rock"
+    }
+  ],
+  "Shopping": [
+    {
+      "word": "Kvittering",
+      "meaning": "Receipt",
+      "example_norsk": "Vil du ha kvitteringen?",
+      "example": "Do you want the receipt?",
+      "fun_fact": "Most shops now offer digital receipts through banking apps.",
+      "image_keyword": "receipt"
+    },
+    {
+      "word": "Pris",
+      "meaning": "Price",
+      "example_norsk": "Hva er prisen på denne?",
+      "example": "What is the price of this one?",
+      "fun_fact": "Norway uses the 'krone' (NOK) as its currency.",
+      "image_keyword": "price tag"
+    },
+    {
+      "word": "Pose",
+      "meaning": "Bag (Plastic/Paper)",
+      "example_norsk": "Trenger du en pose?",
+      "example": "Do you need a bag?",
+      "fun_fact": "Plastic bags in Norway now cost a few kroner to encourage recycling.",
+      "image_keyword": "shopping bag"
+    },
+    {
+      "word": "Kjøpesenter",
+      "meaning": "Shopping Mall",
+      "example_norsk": "Senteret er åpent til klokken ni.",
+      "example": "The mall is open until nine o'clock.",
+      "fun_fact": "Norway has some of the highest mall density in Europe.",
+      "image_keyword": "shopping mall"
+    },
+    {
+      "word": "Salg",
+      "meaning": "Sale",
+      "example_norsk": "Det er salg i klesbutikken.",
+      "example": "There is a sale in the clothing store.",
+      "fun_fact": "January sales (januarsalg) are a major event in Norway.",
+      "image_keyword": "sale sign"
+    }
+  ],
+  "Hygiene": [
+    {
+      "word": "Såpe",
+      "meaning": "Soap",
+      "example_norsk": "Vask hendene med såpe.",
+      "example": "Wash your hands with soap.",
+      "fun_fact": "Traditional Norwegian soap was often made from pine oil.",
+      "image_keyword": "soap"
+    },
+    {
+      "word": "Håndkle",
+      "meaning": "Towel",
+      "example_norsk": "Håndkleet er vått.",
+      "example": "The towel is wet.",
+      "fun_fact": "In Norway, towels are often dried on heated towel rails.",
+      "image_keyword": "towel"
+    },
+    {
+      "word": "Speil",
+      "meaning": "Mirror",
+      "example_norsk": "Jeg ser meg i speilet.",
+      "example": "I look at myself in the mirror.",
+      "fun_fact": "Round mirrors are currently very popular in Scandinavian interior design.",
+      "image_keyword": "mirror"
+    },
+    {
+      "word": "Kam",
+      "meaning": "Comb",
+      "example_norsk": "Jeg grer håret med en kam.",
+      "example": "I am combing my hair with a comb.",
+      "fun_fact": "Vikings were known for carrying beautifully carved combs made of bone.",
+      "image_keyword": "comb"
+    },
+    {
+      "word": "Toalettpapir",
+      "meaning": "Toilet Paper",
+      "example_norsk": "Vi er tomme for toalettpapir.",
+      "example": "We are out of toilet paper.",
+      "fun_fact": "Norway produces a large amount of its own recycled paper products.",
+      "image_keyword": "toilet paper"
+    }
+  ],
+  "Ocean_Life": [
+    {
+      "word": "Laks",
+      "meaning": "Salmon",
+      "example_norsk": "Laksen svømmer i elva.",
+      "example": "The salmon is swimming in the river.",
+      "fun_fact": "Norway is the world's leading producer of Atlantic salmon.",
+      "image_keyword": "salmon"
+    },
+    {
+      "word": "Reke",
+      "meaning": "Shrimp/Prawn",
+      "example_norsk": "Vi spiser reker på brygga.",
+      "example": "We are eating shrimp on the pier.",
+      "fun_fact": "Fresh shrimp with white bread and lemon is a classic Norwegian summer meal.",
+      "image_keyword": "shrimp"
+    },
+    {
+      "word": "Hval",
+      "meaning": "Whale",
+      "example_norsk": "Vi så en hval i fjorden.",
+      "example": "We saw a whale in the fjord.",
+      "fun_fact": "Norway is one of the few countries that still practices traditional whaling.",
+      "image_keyword": "whale"
+    },
+    {
+      "word": "Krabbe",
+      "meaning": "Crab",
+      "example_norsk": "Krabben har hardt skall.",
+      "example": "The crab has a hard shell.",
+      "fun_fact": "The King Crab is an invasive but valuable species in Northern Norway.",
+      "image_keyword": "crab"
+    },
+    {
+      "word": "Sel",
+      "meaning": "Seal",
+      "example_norsk": "Selen ligger på isen.",
+      "example": "The seal is lying on the ice.",
+      "fun_fact": "The harbor seal is a common sight along the Norwegian coast.",
+      "image_keyword": "seal"
+    }
+  ],
+  "Materials": [
+    {
+      "word": "Treverk",
+      "meaning": "Wood (material)",
+      "example_norsk": "Huset er bygget av treverk.",
+      "example": "The house is built of wood.",
+      "fun_fact": "Norway has a long tradition of expert woodworking and carpentry.",
+      "image_keyword": "wood texture"
+    },
+    {
+      "word": "Metall",
+      "meaning": "Metal",
+      "example_norsk": "Nøkkelen er laget av metall.",
+      "example": "The key is made of metal.",
+      "fun_fact": "Hydro is a major Norwegian company that produces aluminum.",
+      "image_keyword": "metal sheet"
+    },
+    {
+      "word": "Plast",
+      "meaning": "Plastic",
+      "example_norsk": "Flasken er laget av plast.",
+      "example": "The bottle is made of plastic.",
+      "fun_fact": "Norway has a very high recycling rate for plastic bottles (the 'Pant' system).",
+      "image_keyword": "plastic bottle"
+    },
+    {
+      "word": "Ull",
+      "meaning": "Wool",
+      "example_norsk": "Ull holder deg varm om vinteren.",
+      "example": "Wool keeps you warm in the winter.",
+      "fun_fact": "Norwegian wool is famous for being durable and warm.",
+      "image_keyword": "wool yarn"
+    },
+    {
+      "word": "Glass",
+      "meaning": "Glass (material)",
+      "example_norsk": "Vinduet er laget av glass.",
+      "example": "The window is made of glass.",
+      "fun_fact": "Double or triple glazing is standard in Norway to keep the heat in.",
+      "image_keyword": "glass shard"
+    }
+  ],
+  "Emergency": [
+    {
+      "word": "Politi",
+      "meaning": "Police",
+      "example_norsk": "Ring politiet!",
+      "example": "Call the police!",
+      "fun_fact": "Most Norwegian police officers do not carry firearms on their person daily.",
+      "image_keyword": "police car"
+    },
+    {
+      "word": "Ambulanse",
+      "meaning": "Ambulance",
+      "example_norsk": "Ambulansen kom raskt.",
+      "example": "The ambulance came quickly.",
+      "fun_fact": "The emergency number for medical help in Norway is 113.",
+      "image_keyword": "ambulance"
+    },
+    {
+      "word": "Brannbil",
+      "meaning": "Fire truck",
+      "example_norsk": "Brannbilen kjører med sirener.",
+      "example": "The fire truck is driving with sirens.",
+      "fun_fact": "The emergency number for fire in Norway is 110.",
+      "image_keyword": "fire truck"
+    },
+    {
+      "word": "Hjelp",
+      "meaning": "Help",
+      "example_norsk": "Jeg trenger hjelp.",
+      "example": "I need help.",
+      "fun_fact": "The word 'dugnad' is a unique Norwegian word for helping each other.",
+      "image_keyword": "help sign"
+    },
+    {
+      "word": "Brann",
+      "meaning": "Fire",
+      "example_norsk": "Det brenner i skogen.",
+      "example": "There is a fire in the forest.",
+      "fun_fact": "Many historic Norwegian towns were destroyed by fire due to wooden buildings.",
+      "image_keyword": "fire"
+    }
+  ],
+  "Technology": [
+    {
+      "word": "Internett",
+      "meaning": "Internet",
+      "example_norsk": "Internettet er nede.",
+      "example": "The internet is down.",
+      "fun_fact": "Norway was the first non-English speaking country to connect to the internet (ARPANET).",
+      "image_keyword": "wifi router"
+    },
+    {
+      "word": "Skjerm",
+      "meaning": "Screen",
+      "example_norsk": "Skjermen er knust.",
+      "example": "The screen is broken.",
+      "fun_fact": "Norwegians spend an average of 4-6 hours on screens per day.",
+      "image_keyword": "computer screen"
+    },
+    {
+      "word": "Passord",
+      "meaning": "Password",
+      "example_norsk": "Hva er passordet til wifi?",
+      "example": "What is the wifi password?",
+      "fun_fact": "BankID is a secure password system used by almost everyone in Norway.",
+      "image_keyword": "lock icon"
+    },
+    {
+      "word": "E-post",
+      "meaning": "Email",
+      "example_norsk": "Jeg sendte deg en e-post.",
+      "example": "I sent you an email.",
+      "fun_fact": "Email is still the most common way to communicate formally in Norway.",
+      "image_keyword": "email icon"
+    },
+    {
+      "word": "Lader",
+      "meaning": "Charger",
+      "example_norsk": "Har du en lader til telefonen?",
+      "example": "Do you have a charger for the phone?",
+      "fun_fact": "Universal USB-C chargers are now the standard in Norway.",
+      "image_keyword": "phone charger"
+    }
+  ],
+  "Weather_Extra": [
+    {
+      "word": "Tåke",
+      "meaning": "Fog",
+      "example_norsk": "Jeg kan ikke se veien på grunn av tåke.",
+      "example": "I cannot see the road because of fog.",
+      "fun_fact": "Fog is very common in the fjords during autumn.",
+      "image_keyword": "foggy forest"
+    },
+    {
+      "word": "Lyn",
+      "meaning": "Lightning",
+      "example_norsk": "Lynet slo ned i treet.",
+      "example": "The lightning struck the tree.",
+      "fun_fact": "Thunderstorms are less frequent in Norway than in southern Europe.",
+      "image_keyword": "lightning"
+    },
+    {
+      "word": "Storm",
+      "meaning": "Storm",
+      "example_norsk": "Det er meldt storm på kysten.",
+      "example": "A storm is predicted on the coast.",
+      "fun_fact": "Norwegians use the app 'Yr' to check for storms.",
+      "image_keyword": "stormy sea"
+    },
+    {
+      "word": "Vær",
+      "meaning": "Weather",
+      "example_norsk": "Hvordan er været i dag?",
+      "example": "How is the weather today?",
+      "fun_fact": "Talking about the weather is the #1 icebreaker in Norway.",
+      "image_keyword": "clouds"
+    },
+    {
+      "word": "Kulde",
+      "meaning": "Cold (The noun)",
+      "example_norsk": "Jeg hater denne kulden.",
+      "example": "I hate this cold.",
+      "fun_fact": "Dry cold is often felt as more comfortable than wet cold.",
+      "image_keyword": "frost"
+    }
+  ],
+  "Sports": [
+    {
+      "word": "Fotball",
+      "meaning": "Football/Soccer",
+      "example_norsk": "Skal vi spille fotball?",
+      "example": "Shall we play football?",
+      "fun_fact": "Norway's Erling Haaland is one of the best players in the world.",
+      "image_keyword": "soccer ball"
+    },
+    {
+      "word": "Håndball",
+      "meaning": "Handball",
+      "example_norsk": "Norge er gode i håndball.",
+      "example": "Norway is good at handball.",
+      "fun_fact": "The Norwegian women's handball team is world-famous.",
+      "image_keyword": "handball"
+    },
+    {
+      "word": "Skøyter",
+      "meaning": "Skates",
+      "example_norsk": "Vi går på skøyter på vannet.",
+      "example": "We are skating on the lake.",
+      "fun_fact": "Speed skating is a historic national sport in Norway.",
+      "image_keyword": "ice skates"
+    },
+    {
+      "word": "Mål",
+      "meaning": "Goal",
+      "example_norsk": "Han scoret et fantastisk mål.",
+      "example": "He scored a fantastic goal.",
+      "fun_fact": "The word 'mål' also means 'measurement' or 'language'.",
+      "image_keyword": "goal net"
+    },
+    {
+      "word": "Lag",
+      "meaning": "Team",
+      "example_norsk": "Vi er et godt lag.",
+      "example": "We are a good team.",
+      "fun_fact": "Community spirit in sports is very strong in Norway.",
+      "image_keyword": "team huddle"
+    }
+  ],
+  "Music_Instruments": [
+    {
+      "word": "Gitar",
+      "meaning": "Guitar",
+      "example_norsk": "Han spiller gitar ved bålet.",
+      "example": "He plays the guitar by the campfire.",
+      "fun_fact": "The guitar is the most popular instrument for beginners in Norway.",
+      "image_keyword": "guitar"
+    },
+    {
+      "word": "Piano",
+      "meaning": "Piano",
+      "example_norsk": "Hun spiller vakkert på piano.",
+      "example": "She plays beautifully on the piano.",
+      "fun_fact": "Edvard Grieg's piano concerto is world-renowned.",
+      "image_keyword": "piano keys"
+    },
+    {
+      "word": "Tromme",
+      "meaning": "Drum",
+      "example_norsk": "Ikke slå så hardt på tromma.",
+      "example": "Don't hit the drum so hard.",
+      "fun_fact": "Drums have been used in Sami culture for centuries.",
+      "image_keyword": "drums"
+    },
+    {
+      "word": "Fiolin",
+      "meaning": "Violin",
+      "example_norsk": "Hardingfele er en norsk fiolin.",
+      "example": "Hardingfele is a Norwegian violin.",
+      "fun_fact": "The Hardanger Fiddle has 8 or 9 strings instead of 4.",
+      "image_keyword": "violin"
+    },
+    {
+      "word": "Fløyte",
+      "meaning": "Flute",
+      "example_norsk": "Fløyten har en lys lyd.",
+      "example": "The flute has a bright sound.",
+      "fun_fact": "Willow flutes (seljefløyte) are traditional Norwegian folk instruments.",
+      "image_keyword": "flute"
+    }
+  ],
+  "Buildings_Parts": [
+    {
+      "word": "Tak",
+      "meaning": "Roof/Ceiling",
+      "example_norsk": "Lampa henger i taket.",
+      "example": "The lamp hangs from the ceiling.",
+      "fun_fact": "Norwegian roofs are built to withstand heavy snow loads.",
+      "image_keyword": "roof"
+    },
+    {
+      "word": "Gulv",
+      "meaning": "Floor",
+      "example_norsk": "Jeg vasker gulvet.",
+      "example": "I am washing the floor.",
+      "fun_fact": "Heated floors (varmekabler) are a standard luxury in Norway.",
+      "image_keyword": "wood floor"
+    },
+    {
+      "word": "Vegg",
+      "meaning": "Wall",
+      "example_norsk": "Bildet henger på veggen.",
+      "example": "The picture is hanging on the wall.",
+      "fun_fact": "Wooden paneling (panel) is very common on Norwegian walls.",
+      "image_keyword": "wall"
+    },
+    {
+      "word": "Trapp",
+      "meaning": "Stairs",
+      "example_norsk": "Gå opp trappen til andre etasje.",
+      "example": "Go up the stairs to the second floor.",
+      "fun_fact": "Norway has the world's longest wooden staircase in Flørli (4444 steps).",
+      "image_keyword": "stairs"
+    },
+    {
+      "word": "Kjeller",
+      "meaning": "Basement",
+      "example_norsk": "Det er mørkt i kjelleren.",
+      "example": "It is dark in the basement.",
+      "fun_fact": "Basements are often used as 'hobbyrom' (hobby rooms) in Norway.",
+      "image_keyword": "basement"
+    }
+  ],
+  "Nature_Objects": [
+    {
+      "word": "Blad",
+      "meaning": "Leaf",
+      "example_norsk": "Bladene faller av trærne.",
+      "example": "The leaves are falling off the trees.",
+      "fun_fact": "The colors of the leaves in the mountains (høstfarger) are stunning.",
+      "image_keyword": "autumn leaf"
+    },
+    {
+      "word": "Gren",
+      "meaning": "Branch",
+      "example_norsk": "Fuglen sitter på en gren.",
+      "example": "The bird is sitting on a branch.",
+      "fun_fact": "Spruce branches were traditionally used as doormats.",
+      "image_keyword": "tree branch"
+    },
+    {
+      "word": "Sand",
+      "meaning": "Sand",
+      "example_norsk": "Barna leker i sanden.",
+      "example": "The children are playing in the sand.",
+      "fun_fact": "Norway has several 'arctic beaches' with coral-white sand.",
+      "image_keyword": "sand"
+    },
+    {
+      "word": "Gjørme",
+      "meaning": "Mud",
+      "example_norsk": "Stien er full av gjørme.",
+      "example": "The path is full of mud.",
+      "fun_fact": "Springtime in Norway is often called 'gjørmetid' (mud time).",
+      "image_keyword": "mud"
+    },
+    {
+      "word": "Is",
+      "meaning": "Ice",
+      "example_norsk": "Pass deg, det er glatt på isen.",
+      "example": "Watch out, it's slippery on the ice.",
+      "fun_fact": "Glaciers in Norway are thousands of years old.",
+      "image_keyword": "ice"
+    }
+  ],
+  "Feelings_Extra": [
+    {
+      "word": "Sint",
+      "meaning": "Angry",
+      "example_norsk": "Ikke vær sint på meg.",
+      "example": "Don't be angry with me.",
+      "fun_fact": "Norwegians value politeness and rarely show anger in public.",
+      "image_keyword": "angry"
+    },
+    {
+      "word": "Redd",
+      "meaning": "Scared/Afraid",
+      "example_norsk": "Jeg er redd for edderkopper.",
+      "example": "I am afraid of spiders.",
+      "fun_fact": "There are very few dangerous animals in the Norwegian wild.",
+      "image_keyword": "scared"
+    },
+    {
+      "word": "Overrasket",
+      "meaning": "Surprised",
+      "example_norsk": "Jeg ble veldig overrasket!",
+      "example": "I was very surprised!",
+      "fun_fact": "Surprise parties are called 'overraskelsesfest'.",
+      "image_keyword": "surprised"
+    },
+    {
+      "word": "Stolt",
+      "meaning": "Proud",
+      "example_norsk": "Jeg er stolt av deg.",
+      "example": "I am proud of you.",
+      "fun_fact": "Norwegians are very proud of their local dialects.",
+      "image_keyword": "proud"
+    },
+    {
+      "word": "Trist",
+      "meaning": "Sad",
+      "example_norsk": "Det var en trist film.",
+      "example": "It was a sad movie.",
+      "fun_fact": "The word 'stusselig' is a unique way to describe something slightly sad or pathetic.",
+      "image_keyword": "sad face"
+    }
+  ],
+  "Bedroom": [
+    {
+      "word": "Dyne",
+      "meaning": "Duvet/Quilt",
+      "example_norsk": "Dyna er god og varm.",
+      "example": "The duvet is good and warm.",
+      "fun_fact": "Norwegians use down-filled duvets even in the summer.",
+      "image_keyword": "duvet"
+    },
+    {
+      "word": "Pute",
+      "meaning": "Pillow",
+      "example_norsk": "Jeg trenger en myk pute.",
+      "example": "I need a soft pillow.",
+      "fun_fact": "Pillow fights are called 'putekrig' in Norwegian.",
+      "image_keyword": "pillow"
+    },
+    {
+      "word": "Vekkerklokke",
+      "meaning": "Alarm clock",
+      "example_norsk": "Vekkerklokka ringer klokken syv.",
+      "example": "The alarm clock rings at seven o'clock.",
+      "fun_fact": "Most Norwegians now use their smartphones as alarm clocks.",
+      "image_keyword": "alarm clock"
+    },
+    {
+      "word": "Skap",
+      "meaning": "Closet/Cupboard",
+      "example_norsk": "Klærne henger i skapet.",
+      "example": "The clothes are hanging in the closet.",
+      "fun_fact": "Built-in closets are standard in most Norwegian bedrooms.",
+      "image_keyword": "closet"
+    },
+    {
+      "word": "Nattbord",
+      "meaning": "Nightstand",
+      "example_norsk": "Boken ligger på nattbordet.",
+      "example": "The book is on the nightstand.",
+      "fun_fact": "A nightstand is literally a 'night table' in Norwegian.",
+      "image_keyword": "nightstand"
+    }
+  ],
+  "Sky_Space": [
+    {
+      "word": "Måne",
+      "meaning": "Moon",
+      "example_norsk": "Månen lyser opp natten.",
+      "example": "The moon lights up the night.",
+      "fun_fact": "The full moon over the snowy mountains is a popular photo motif.",
+      "image_keyword": "moon"
+    },
+    {
+      "word": "Stjerne",
+      "meaning": "Star",
+      "example_norsk": "Se på alle stjernene!",
+      "example": "Look at all the stars!",
+      "fun_fact": "Because there is little light pollution, stars are very visible in rural Norway.",
+      "image_keyword": "stars"
+    },
+    {
+      "word": "Sky",
+      "meaning": "Cloud",
+      "example_norsk": "Det er ikke en sky på himmelen.",
+      "example": "There isn't a cloud in the sky.",
+      "fun_fact": "The Norwegian word for 'cloud' is the same as the word for 'sky' in English (context matters!).",
+      "image_keyword": "clouds"
+    },
+    {
+      "word": "Himmel",
+      "meaning": "Sky/Heaven",
+      "example_norsk": "Himmelen er rosa i kveld.",
+      "example": "The sky is pink tonight.",
+      "fun_fact": "The Northern Lights (Nordlys) appear high in the Norwegian sky.",
+      "image_keyword": "sunset sky"
+    },
+    {
+      "word": "Planet",
+      "meaning": "Planet",
+      "example_norsk": "Mars er en rød planet.",
+      "example": "Mars is a red planet.",
+      "fun_fact": "Norway has a space center on the island of Andøya.",
+      "image_keyword": "planets"
+    }
+  ],
+  "Beach_Holiday": [
+    {
+      "word": "Badeball",
+      "meaning": "Beach ball",
+      "example_norsk": "Vi leker med en badeball.",
+      "example": "We are playing with a beach ball.",
+      "fun_fact": "Beach balls are a staple of Norwegian summer vacations.",
+      "image_keyword": "beach ball"
+    },
+    {
+      "word": "Solkrem",
+      "meaning": "Sunscreen",
+      "example_norsk": "Husk å bruke solkrem!",
+      "example": "Remember to use sunscreen!",
+      "fun_fact": "Even in the mountains, the sun can be very strong due to snow reflection.",
+      "image_keyword": "sunscreen"
+    },
+    {
+      "word": "Håndkle",
+      "meaning": "Towel",
+      "example_norsk": "Legg håndkleet på sanden.",
+      "example": "Lay the towel on the sand.",
+      "fun_fact": "Microfiber towels are becoming popular for hikers.",
+      "image_keyword": "beach towel"
+    },
+    {
+      "word": "Skjell",
+      "meaning": "Shell",
+      "example_norsk": "Jeg fant et fint skjell.",
+      "example": "I found a nice shell.",
+      "fun_fact": "Norwegian children often collect blue mussel shells (blåskjell).",
+      "image_keyword": "seashell"
+    },
+    {
+      "word": "Bølger",
+      "meaning": "Waves",
+      "example_norsk": "Bølgene er store i dag.",
+      "example": "The waves are big today.",
+      "fun_fact": "Stad is the most wave-heavy place in Norway, popular for surfing.",
+      "image_keyword": "ocean waves"
+    }
+  ],
+  "Winter_Clothing": [
+    {
+      "word": "Votter",
+      "meaning": "Mittens",
+      "example_norsk": "Ullvotter er best i kulda.",
+      "example": "Wool mittens are best in the cold.",
+      "fun_fact": "Selbuvotter are the most famous patterned mittens from Norway.",
+      "image_keyword": "mittens"
+    },
+    {
+      "word": "Skjerf",
+      "meaning": "Scarf",
+      "example_norsk": "Surr skjerfet rundt halsen.",
+      "example": "Wrap the scarf around your neck.",
+      "fun_fact": "Long, thick wool scarves are a fashion staple in Oslo.",
+      "image_keyword": "scarf"
+    },
+    {
+      "word": "Kåpe",
+      "meaning": "Coat",
+      "example_norsk": "Hun har på seg en fin kåpe.",
+      "example": "She is wearing a nice coat.",
+      "fun_fact": "The word 'kåpe' usually refers to a dressier, long coat.",
+      "image_keyword": "winter coat"
+    },
+    {
+      "word": "Støvler",
+      "meaning": "Boots",
+      "example_norsk": "Jeg trenger vanntette støvler.",
+      "example": "I need waterproof boots.",
+      "fun_fact": "Rubber boots (gummistøvler) are essential for rainy days.",
+      "image_keyword": "rubber boots"
+    },
+    {
+      "word": "Termos",
+      "meaning": "Thermos",
+      "example_norsk": "Vi har kakao på termosen.",
+      "example": "We have cocoa in the thermos.",
+      "fun_fact": "No Norwegian 'skitur' (ski trip) is complete without a thermos.",
+      "image_keyword": "thermos"
+    }
+  ]
+}
