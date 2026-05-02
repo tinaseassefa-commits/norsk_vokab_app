@@ -2,14 +2,14 @@ import json
 import random
 import os
 from fastapi import FastAPI
-from fastapi.responses import FileResponse # Needed to show index.html
+from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from gtts import gTTS
 
 app = FastAPI()
 
-# 1. ALLOW FRONTEND ACCESS
+# 1. ALLOW ACCESS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -17,16 +17,22 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 2. MOUNT STATIC FOLDER
+# 2. SETUP DIRECTORIES
 os.makedirs("static/audio", exist_ok=True)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# 3. LOAD DATA
-# Ensure your file is named exactly 'vocabulary.json' in your GitHub folder
-with open("vocabulary.json", "r", encoding="utf-8") as f:
-    vocab_data = json.load(f)
+# 3. LOAD DATA (Do this before any routes!)
+# This ensures vocab_data is defined as soon as the app starts
+try:
+    with open("vocabulary.json", "r", encoding="utf-8") as f:
+        vocab_data = json.load(f)
+    print("Successfully loaded vocabulary.json")
+except Exception as e:
+    print(f"Error loading JSON: {e}")
+    # Fallback so the app doesn't crash if the file is missing
+    vocab_data = {"Error": [{"word": "Error", "meaning": "Check JSON file", "example": "", "fun_fact": "", "image_keyword": "error"}]}
 
-# 4. THE HOME PAGE (This fixes the "Not Found" error!)
+# 4. THE HOME PAGE (Fixes "Not Found")
 @app.get("/")
 async def serve_index():
     return FileResponse('index.html')
@@ -34,6 +40,7 @@ async def serve_index():
 # 5. THE API ENGINE
 @app.get("/word-of-the-day")
 async def get_word():
+    # This now safely uses the vocab_data defined above
     family_name = random.choice(list(vocab_data.keys()))
     word_item = random.choice(vocab_data[family_name])
     word_text = word_item['word']
@@ -56,7 +63,6 @@ async def get_word():
         "audio": f"/static/audio/{filename}"
     }
 
-# 6. RENDER DEPLOYMENT SETTINGS
 if __name__ == "__main__":
     import uvicorn
     port = int(os.environ.get("PORT", 8000))
