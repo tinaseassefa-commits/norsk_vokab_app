@@ -18,52 +18,63 @@ app.add_middleware(
 )
 
 # 2. SETUP DIRECTORIES
+# Create the folders if they don't exist
 os.makedirs("static/audio", exist_ok=True)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# 3. LOAD DATA (Do this before any routes!)
-# This ensures vocab_data is defined as soon as the app starts
+# 3. LOAD DATA
 try:
     with open("vocabulary.json", "r", encoding="utf-8") as f:
         vocab_data = json.load(f)
-    print("Successfully loaded vocabulary.json")
+    print("Vocabulary loaded successfully.")
 except Exception as e:
     print(f"Error loading JSON: {e}")
-    # Fallback so the app doesn't crash if the file is missing
-    vocab_data = {"Error": [{"word": "Error", "meaning": "Check JSON file", "example": "", "fun_fact": "", "image_keyword": "error"}]}
+    vocab_data = {}
 
-# 4. THE HOME PAGE (Fixes "Not Found")
+# 4. SERVE THE FRONTEND
 @app.get("/")
 async def serve_index():
     return FileResponse('index.html')
 
-# 5. THE API ENGINE
-@app.get("/word-of-the-day")
-async def get_word():
-    # This now safely uses the vocab_data defined above
-    family_name = random.choice(list(vocab_data.keys()))
-    word_item = random.choice(vocab_data[family_name])
-    word_text = word_item['word']
+# 5. THE NEW LIST GENERATOR (10 Words)
+@app.get("/word-list")
+async def get_word_list():
+    # Flatten all categories into a single list
+    all_words = []
+    for family, words in vocab_data.items():
+        for w in words:
+            w['family'] = family
+            all_words.append(w)
     
-    filename = f"{word_text.lower()}.mp3"
-    filepath = os.path.join("static/audio", filename)
+    # Pick 10 random words (or fewer if the list is small)
+    sample_size = min(len(all_words), 10)
+    selected_words = random.sample(all_words, sample_size)
     
-    if not os.path.exists(filepath):
-        tts = gTTS(text=word_text, lang='no')
-        tts.save(filepath)
-    
-    return {
-        "family": family_name,
-        "word": word_text,
-        "meaning": word_item['meaning'],
-        "example_norsk": word_item.get('example_norsk', 'Ingen eksempel tilgjengelig'),
-        "example": word_item['example'],
-        "fun_fact": word_item['fun_fact'],
-        "image": f"https://loremflickr.com/400/300/{word_item['image_keyword']}",
-        "audio": f"/static/audio/{filename}"
-    }
+    for item in selected_words:
+        word_text = item['word']
+        example_text = item.get('example_norsk', '')
+
+        # Generate Audio for the WORD
+        word_filename = f"word_{word_text.lower().replace(' ', '_')}.mp3"
+        word_path = os.path.join("static/audio", word_filename)
+        if not os.path.exists(word_path):
+            gTTS(text=word_text, lang='no').save(word_path)
+        item['audio_word'] = f"/static/audio/{word_filename}"
+
+        # Generate Audio for the EXAMPLE
+        if example_text:
+            ex_filename = f"ex_{word_text.lower().replace(' ', '_')}.mp3"
+            ex_path = os.path.join("static/audio", ex_filename)
+            if not os.path.exists(ex_path):
+                gTTS(text=example_text, lang='no').save(ex_path)
+            item['audio_example'] = f"/static/audio/{ex_filename}"
+        else:
+            item['audio_example'] = None
+
+    return selected_words
 
 if __name__ == "__main__":
     import uvicorn
+    # Render uses the PORT environment variable
     port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
