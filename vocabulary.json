@@ -1,1136 +1,348 @@
 {
-  "Food": [
-    {
-      "word": "Brød",
-      "meaning": "Bread",
-      "example_norsk": "Jeg spiser ferskt brød til frokost.",
-      "example": "I eat fresh bread for breakfast.",
-      "fun_fact": "Bread is a staple of the Norwegian diet, often served as 'matpakke'.",
-      "image_keyword": "bread"
-    },
-    {
-      "word": "Vann",
-      "meaning": "Water",
-      "example_norsk": "Kan jeg få et glass vann?",
-      "example": "Can I have a glass of water?",
-      "fun_fact": "Norway has some of the cleanest tap water in the world.",
-      "image_keyword": "glass water"
-    },
-    {
-      "word": "Kaffe",
-      "meaning": "Coffee",
-      "example_norsk": "Nordmenn drikker veldig mye kaffe.",
-      "example": "Norwegians drink a lot of coffee.",
-      "fun_fact": "Norway is one of the top coffee-consuming nations per capita.",
-      "image_keyword": "coffee cup"
-    },
-    {
-      "word": "Melk",
-      "meaning": "Milk",
-      "example_norsk": "Barnet drikker et glass melk.",
-      "example": "The child is drinking a glass of milk.",
-      "fun_fact": "Tine is the largest dairy cooperative in Norway.",
-      "image_keyword": "milk"
-    },
-    {
-      "word": "Eple",
-      "meaning": "Apple",
-      "example_norsk": "Eplet er rødt og søtt.",
-      "example": "The apple is red and sweet.",
-      "fun_fact": "Hardanger is famous for its delicious Norwegian apples.",
-      "image_keyword": "apple"
-    }
+  "Arbeid og Utdanning": [
+    { "word": "Arbeidsgiver", "meaning": "Employer", "kjønn": "en", "example_norsk": "Arbeidsgiveren min er veldig fleksibel.", "example": "My employer is very flexible.", "fun_fact": "The largest employer in Norway is the public sector.", "image_keyword": "boss" },
+    { "word": "Arbeidstaker", "meaning": "Employee", "kjønn": "en", "example_norsk": "Som arbeidstaker har du mange rettigheter.", "example": "As an employee, you have many rights.", "fun_fact": "Trade unions (fagforeninger) protect most employees.", "image_keyword": "worker" },
+    { "word": "Oppsigelse", "meaning": "Resignation / Notice of termination", "kjønn": "en", "example_norsk": "Han leverte sin oppsigelse i går.", "example": "He handed in his resignation yesterday.", "fun_fact": "The standard notice period is usually 3 months in Norway.", "image_keyword": "quit" },
+    { "word": "Vikar", "meaning": "Substitute / Temp", "kjønn": "en", "example_norsk": "Vi trenger en vikar for læreren.", "example": "We need a substitute for the teacher.", "fun_fact": "Many nurses start their careers as 'vikarer'.", "image_keyword": "teacher" },
+    { "word": "Ansettelse", "meaning": "Employment / Hiring", "kjønn": "en", "example_norsk": "Hun fikk bekreftelse på ansettelse.", "example": "She received confirmation of employment.", "fun_fact": "Fixed-term employment is called 'midlertidig ansettelse'.", "image_keyword": "handshake" },
+    { "word": "Kompetanse", "meaning": "Competence / Skillset", "kjønn": "en", "example_norsk": "Du har den rette kompetansen for jobben.", "example": "You have the right competence for the job.", "fun_fact": "Digital competence is highly valued in the Norwegian market.", "image_keyword": "skills" },
+    { "word": "Erfaring", "meaning": "Experience", "kjønn": "en", "example_norsk": "Jeg har fem års erfaring som ingeniør.", "example": "I have five years of experience as an engineer.", "fun_fact": "Relevant experience can sometimes replace education requirements.", "image_keyword": "timeline" },
+    { "word": "Fagbrev", "meaning": "Trade certificate", "kjønn": "et", "example_norsk": "Han tok fagbrev som tømrer.", "example": "He got his trade certificate as a carpenter.", "fun_fact": "A 'fagbrev' is highly respected and leads to better pay.", "image_keyword": "certificate" },
+    { "word": "Lærling", "meaning": "Apprentice", "kjønn": "en", "example_norsk": "Lærlingen lærer mye på verkstedet.", "example": "The apprentice is learning a lot at the workshop.", "fun_fact": "Apprenticeships are a key part of the Norwegian school system.", "image_keyword": "student" },
+    { "word": "Overtid", "meaning": "Overtime", "kjønn": "en", "example_norsk": "Jeg må jobbe overtid denne uken.", "example": "I have to work overtime this week.", "fun_fact": "Overtime pay must be at least 40% extra by law.", "image_keyword": "clock" },
+    { "word": "Pensjon", "meaning": "Pension", "kjønn": "en", "example_norsk": "Han begynte å spare til pensjon tidlig.", "example": "He started saving for pension early.", "fun_fact": "The state pension is managed by Folketrygden.", "image_keyword": "elderly" },
+    { "word": "Sykemelding", "meaning": "Sick leave certificate", "kjønn": "en", "example_norsk": "Legen ga ham en sykemelding.", "example": "The doctor gave him a sick leave certificate.", "fun_fact": "You can use 'egenmelding' for short illnesses without a doctor.", "image_keyword": "sick" },
+    { "word": "Stillingsprosent", "meaning": "Employment percentage", "kjønn": "en", "example_norsk": "Jeg jobber i en åtti prosent stillingsprosent.", "example": "I work in an eighty percent employment position.", "fun_fact": "Full-time is 100%, usually 37.5 hours per week.", "image_keyword": "chart" },
+    { "word": "Prøvetid", "meaning": "Probation period", "kjønn": "en", "example_norsk": "De første seks månedene er prøvetid.", "example": "The first six months are a probation period.", "fun_fact": "Termination is easier during 'prøvetid' for both sides.", "image_keyword": "calendar" },
+    { "word": "Feriepenger", "meaning": "Holiday pay", "kjønn": "en", "example_norsk": "Feriepengene utbetales i juni.", "example": "Holiday pay is paid out in June.", "fun_fact": "It's usually 10.2% or 12% of last year's salary.", "image_keyword": "beach" },
+    { "word": "Skatt", "meaning": "Tax", "kjønn": "en", "example_norsk": "Vi betaler skatt for å finansiere velferd.", "example": "We pay tax to finance welfare.", "fun_fact": "The tax office is called 'Skatteetaten'.", "image_keyword": "tax" },
+    { "word": "Inntekt", "meaning": "Income", "kjønn": "en", "example_norsk": "Husholdningen har en stabil inntekt.", "example": "The household has a stable income.", "fun_fact": "Taxable income is called 'alminnelig inntekt'.", "image_keyword": "wallet" },
+    { "word": "Utgifte", "meaning": "Expense", "kjønn": "en", "example_norsk": "Firmaet har høye utgifter til leie.", "example": "The company has high expenses for rent.", "fun_fact": "Business expenses are often 'fradragsberettiget' (tax-deductible).", "image_keyword": "bill" },
+    { "word": "Møte", "meaning": "Meeting", "kjønn": "et", "example_norsk": "Møtet begynner klokken ni.", "example": "The meeting starts at nine o'clock.", "fun_fact": "Norwegians value punctuality; don't be late for a 'møte'!", "image_keyword": "meeting" },
+    { "word": "Samarbeid", "meaning": "Cooperation / Collaboration", "kjønn": "et", "example_norsk": "Godt samarbeid er viktig for prosjektet.", "example": "Good cooperation is important for the project.", "fun_fact": "The 'Nordic Model' is built on cooperation between state and unions.", "image_keyword": "puzzle" },
+    { "word": "Ansvar", "meaning": "Responsibility", "kjønn": "et", "example_norsk": "Jeg har ansvar for ti ansatte.", "example": "I am responsible for ten employees.", "fun_fact": "Taking 'ansvar' is highly looked upon in Norwegian leadership.", "image_keyword": "leader" },
+    { "word": "Utvikling", "meaning": "Development", "kjønn": "en", "example_norsk": "Det er rom for personlig utvikling i jobben.", "example": "There is room for personal development in the job.", "fun_fact": "Many companies offer 'etterutdanning' (further education).", "image_keyword": "growth" },
+    { "word": "Kvalifikasjon", "meaning": "Qualification", "kjønn": "en", "example_norsk": "Hvilke kvalifikasjoner kreves for denne rollen?", "example": "What qualifications are required for this role?", "fun_fact": "NOKUT helps verify foreign qualifications in Norway.", "image_keyword": "degree" },
+    { "word": "Søknadsfrist", "meaning": "Application deadline", "kjønn": "en", "example_norsk": "Søknadsfristen går ut ved midnatt.", "example": "The application deadline expires at midnight.", "fun_fact": "Some ads say 'snarest' (as soon as possible) instead of a date.", "image_keyword": "hourglass" },
+    { "word": "Referanse", "meaning": "Reference", "kjønn": "en", "example_norsk": "Kan jeg oppgi deg som referanse?", "example": "Can I list you as a reference?", "fun_fact": "Norwegian employers usually call references after the interview.", "image_keyword": "phone" },
+    { "word": "Intervju", "meaning": "Interview", "kjønn": "et", "example_norsk": "Jeg ble innkalt til intervju på mandag.", "example": "I was called in for an interview on Monday.", "fun_fact": "Casual dress code is common in many Norwegian interviews.", "image_keyword": "interview" },
+    { "word": "Permisjon", "meaning": "Leave of absence", "kjønn": "en", "example_norsk": "Hun skal ha foreldrepermisjon i ett år.", "example": "She is going on parental leave for one year.", "fun_fact": "Norway has one of the best 'foreldrepermisjon' systems in the world.", "image_keyword": "baby" },
+    { "word": "Fagforening", "meaning": "Labor union", "kjønn": "en", "example_norsk": "Det lønner seg å være medlem i en fagforening.", "example": "It pays to be a member of a labor union.", "fun_fact": "LO is the largest umbrella organization for unions in Norway.", "image_keyword": "group" },
+    { "word": "Hovedoppgave", "meaning": "Main task / Thesis", "kjønn": "en", "example_norsk": "Min hovedoppgave er å øke salget.", "example": "My main task is to increase sales.", "fun_fact": "A Master's thesis is often called a 'masteroppgave'.", "image_keyword": "target" },
+    { "word": "Taushetsplikt", "meaning": "Duty of confidentiality", "kjønn": "en", "example_norsk": "Alle ansatte må signere på taushetsplikt.", "example": "All employees must sign a duty of confidentiality.", "fun_fact": "This is extremely strict in healthcare and banking.", "image_keyword": "secret" }
   ],
-  "Animals": [
-    {
-      "word": "Hund",
-      "meaning": "Dog",
-      "example_norsk": "Hunden løper i hagen.",
-      "example": "The dog is running in the garden.",
-      "fun_fact": "The Lundehund is a unique Norwegian breed with six toes on each foot.",
-      "image_keyword": "dog"
-    },
-    {
-      "word": "Katt",
-      "meaning": "Cat",
-      "example_norsk": "Katten sover på sofaen.",
-      "example": "The cat is sleeping on the sofa.",
-      "fun_fact": "The Norwegian Forest Cat is known for its thick, water-repellent fur.",
-      "image_keyword": "cat"
-    },
-    {
-      "word": "Elg",
-      "meaning": "Moose",
-      "example_norsk": "Elgen er skogens konge.",
-      "example": "The moose is the king of the forest.",
-      "fun_fact": "There are over 100,000 moose in Norway.",
-      "image_keyword": "moose"
-    },
-    {
-      "word": "Fugl",
-      "meaning": "Bird",
-      "example_norsk": "Fuglen synger i treet.",
-      "example": "The bird is singing in the tree.",
-      "fun_fact": "The White-throated Dipper (Fossekall) is Norway's national bird.",
-      "image_keyword": "bird"
-    },
-    {
-      "word": "Bjørn",
-      "meaning": "Bear",
-      "example_norsk": "Bjørnen sover hele vinteren.",
-      "example": "The bear sleeps all winter.",
-      "fun_fact": "Brown bears can still be found in remote parts of Norway.",
-      "image_keyword": "bear"
-    }
+  "Følelser og Meninger": [
+    { "word": "Utfordring", "meaning": "Challenge", "kjønn": "en", "example_norsk": "Norsk grammatikk er en stor utfordring.", "example": "Norwegian grammar is a big challenge.", "fun_fact": "Often used positively to mean growth.", "image_keyword": "climb" },
+    { "word": "Mulighet", "meaning": "Opportunity", "kjønn": "en", "example_norsk": "Dette er en unik mulighet.", "example": "This is a unique opportunity.", "fun_fact": "Suffix -het creates abstract nouns.", "image_keyword": "door" },
+    { "word": "Forventning", "meaning": "Expectation", "kjønn": "en", "example_norsk": "Jeg har høye forventninger.", "example": "I have high expectations.", "fun_fact": "Suffix -ing often turns verbs to nouns.", "image_keyword": "wait" },
+    { "word": "Holdning", "meaning": "Attitude", "kjønn": "en", "example_norsk": "Hun har en positiv holdning.", "example": "She has a positive attitude.", "fun_fact": "Can also mean physical posture.", "image_keyword": "pose" },
+    { "word": "Beslutning", "meaning": "Decision", "kjønn": "en", "example_norsk": "Vi må ta en beslutning snart.", "example": "We must make a decision soon.", "fun_fact": "Formal version of 'bestemmelse'.", "image_keyword": "choice" },
+    { "word": "Trygghet", "meaning": "Safety / Security", "kjønn": "en", "example_norsk": "Barna trenger trygghet i hverdagen.", "example": "Children need security in daily life.", "fun_fact": "A core value in Norwegian society.", "image_keyword": "shield" },
+    { "word": "Tålmodighet", "meaning": "Patience", "kjønn": "en", "example_norsk": "Du må ha tålmodighet med barna.", "example": "You must have patience with the children.", "fun_fact": "Essential for learning a language!", "image_keyword": "sand-clock" },
+    { "word": "Vennskap", "meaning": "Friendship", "kjønn": "et", "example_norsk": "Vennskap er viktig for helsen.", "example": "Friendship is important for health.", "fun_fact": "Suffix -skap indicates a state or quality.", "image_keyword": "friends" },
+    { "word": "Kjærlighet", "meaning": "Love", "kjønn": "en", "example_norsk": "Størst av alt er kjærligheten.", "example": "The greatest of all is love.", "fun_fact": "Used for people, hobbies, and nature.", "image_keyword": "heart" },
+    { "word": "Skuffelse", "meaning": "Disappointment", "kjønn": "en", "example_norsk": "Det var en stor skuffelse å tape.", "example": "It was a big disappointment to lose.", "fun_fact": "Comes from the verb 'å skuffe'.", "image_keyword": "sad" },
+    { "word": "Glede", "meaning": "Joy", "kjønn": "en", "example_norsk": "Det var en glede å se deg.", "example": "It was a joy to see you.", "fun_fact": "Used in the common greeting 'Gledelig jul'.", "image_keyword": "happy" },
+    { "word": "Sorg", "meaning": "Grief / Sorrow", "kjønn": "en", "example_norsk": "Han følte dyp sorg etter tapet.", "example": "He felt deep sorrow after the loss.", "fun_fact": "Often used in literature and music.", "image_keyword": "rain" },
+    { "word": "Sinne", "meaning": "Anger", "kjønn": "et", "example_norsk": "Det er vanskelig å kontrollere sinne.", "example": "It is hard to control anger.", "fun_fact": "Related to the adjective 'sint'.", "image_keyword": "fire" },
+    { "word": "Frykt", "meaning": "Fear", "kjønn": "en", "example_norsk": "Frykt kan stoppe oss fra å prøve.", "example": "Fear can stop us from trying.", "fun_fact": "Commonly used in compound words like 'høydefrykt'.", "image_keyword": "dark" },
+    { "word": "Tillit", "meaning": "Trust", "kjønn": "en", "example_norsk": "Tillit er fundamentet i samfunnet.", "example": "Trust is the foundation of society.", "fun_fact": "Norway has the world's highest social trust.", "image_keyword": "handshake" },
+    { "word": "Respekt", "meaning": "Respect", "kjønn": "en", "example_norsk": "Vi må vise respekt for hverandre.", "example": "We must show respect for each other.", "fun_fact": "Often paired with 'gjensidig' (mutual).", "image_keyword": "bow" },
+    { "word": "Nysgjerrighet", "meaning": "Curiosity", "kjønn": "en", "example_norsk": "Barnas nysgjerrighet er grenseløs.", "example": "Children's curiosity is boundless.", "fun_fact": "Literally means 'new-greedy-ness'.", "image_keyword": "magnifier" },
+    { "word": "Misunnelse", "meaning": "Envy", "kjønn": "en", "example_norsk": "Misunnelse er en dårlig egenskap.", "example": "Envy is a bad trait.", "fun_fact": "Similar to Janteloven principles.", "image_keyword": "green-eye" },
+    { "word": "Lykke", "meaning": "Happiness / Luck", "kjønn": "en", "example_norsk": "Penger kan ikke kjøpe lykke.", "example": "Money can't buy happiness.", "fun_fact": "Norway is often in the top 3 happiest nations.", "image_keyword": "sun" },
+    { "word": "Bekymring", "meaning": "Worry / Concern", "kjønn": "en", "example_norsk": "Jeg har ingen bekymringer i dag.", "example": "I have no worries today.", "fun_fact": "Used frequently in health contexts.", "image_keyword": "thought" }
   ],
-  "Work": [
-    {
-      "word": "Skole",
-      "meaning": "School",
-      "example_norsk": "Barna går til skolen hver morgen.",
-      "example": "The children go to school every morning.",
-      "fun_fact": "School is mandatory in Norway from ages 6 to 16.",
-      "image_keyword": "school building"
-    },
-    {
-      "word": "Jobb",
-      "meaning": "Job/Work",
-      "example_norsk": "Jeg trives veldig godt i jobben min.",
-      "example": "I enjoy my job very much.",
-      "fun_fact": "Norway has a strong 'flat hierarchy' at work, meaning bosses and employees are quite equal.",
-      "image_keyword": "office"
-    },
-    {
-      "word": "Lærer",
-      "meaning": "Teacher",
-      "example_norsk": "Læreren forklarer oppgaven.",
-      "example": "The teacher explains the task.",
-      "fun_fact": "Teachers in Norway focus a lot on outdoor learning and 'friluftsliv'.",
-      "image_keyword": "teacher"
-    },
-    {
-      "word": "Penger",
-      "meaning": "Money",
-      "example_norsk": "Jeg må spare penger til ferien.",
-      "example": "I need to save money for the vacation.",
-      "fun_fact": "The Norwegian currency is the 'Krone', and Norway is almost a cashless society.",
-      "image_keyword": "coins"
-    },
-    {
-      "word": "Blyant",
-      "meaning": "Pencil",
-      "example_norsk": "Kan jeg låne en blyant?",
-      "example": "Can I borrow a pencil?",
-      "fun_fact": "In Norway, the first day of school is a huge celebration for first-graders.",
-      "image_keyword": "pencil"
-    }
+  "Helse og Medisin": [
+    { "word": "Legekontor", "meaning": "Doctor's office", "kjønn": "et", "example_norsk": "Jeg må ringe til legekontoret.", "example": "I have to call the doctor's office.", "fun_fact": "Most appointments are booked online now.", "image_keyword": "clinic" },
+    { "word": "Fastlege", "meaning": "General Practitioner (GP)", "kjønn": "en", "example_norsk": "Hvem er din fastlege?", "example": "Who is your GP?", "fun_fact": "Everyone in Norway is assigned a primary doctor.", "image_keyword": "doctor" },
+    { "word": "Resept", "meaning": "Prescription", "kjønn": "en", "example_norsk": "Legen skrev ut en resept på antibiotika.", "example": "The doctor wrote a prescription for antibiotics.", "fun_fact": "Most prescriptions are 'e-resepter' (digital).", "image_keyword": "pharmacy" },
+    { "word": "Behandling", "meaning": "Treatment", "kjønn": "en", "example_norsk": "Behandlingen var vellykket.", "example": "The treatment was successful.", "fun_fact": "Standardized for all public patients.", "image_keyword": "therapy" },
+    { "word": "Egenandel", "meaning": "Deductible", "kjønn": "en", "example_norsk": "Man må betale en liten egenandel.", "example": "One must pay a small deductible.", "fun_fact": "Limited by the annual 'frikort' system.", "image_keyword": "money" },
+    { "word": "Sykehus", "meaning": "Hospital", "kjønn": "et", "example_norsk": "Pasienten ble kjørt til sykehuset.", "example": "The patient was driven to the hospital.", "fun_fact": "Public hospitals are free in Norway.", "image_keyword": "hospital" },
+    { "word": "Medisin", "meaning": "Medicine", "kjønn": "en", "example_norsk": "Husk å ta medisinen din hver dag.", "example": "Remember to take your medicine every day.", "fun_fact": "Apotek 1 is the largest pharmacy chain.", "image_keyword": "pills" },
+    { "word": "Sykdom", "meaning": "Illness / Disease", "kjønn": "en", "example_norsk": "Dette er en sjelden sykdom.", "example": "This is a rare illness.", "fun_fact": "Suffix -dom indicates a state.", "image_keyword": "virus" },
+    { "word": "Helse", "meaning": "Health", "kjønn": "en", "example_norsk": "God helse er viktig for alle.", "example": "Good health is important for everyone.", "fun_fact": "Health is a major political topic in Norway.", "image_keyword": "fitness" },
+    { "word": "Smerte", "meaning": "Pain", "kjønn": "en", "example_norsk": "Jeg har store smerter i ryggen.", "example": "I have great pain in my back.", "fun_fact": "Doctors use a scale from 1 to 10 for pain.", "image_keyword": "ache" },
+    { "word": "Forebygging", "meaning": "Prevention", "kjønn": "en", "example_norsk": "Forebygging er bedre enn behandling.", "example": "Prevention is better than treatment.", "fun_fact": "Focuses on diet, exercise, and screening.", "image_keyword": "shield" },
+    { "word": "Operasjon", "meaning": "Operation / Surgery", "kjønn": "en", "example_norsk": "Operasjonen tok fire timer.", "example": "The operation took four hours.", "fun_fact": "Can also mean a military or business operation.", "image_keyword": "surgery" },
+    { "word": "Pasient", "meaning": "Patient", "kjønn": "en", "example_norsk": "Pasienten må ligge i ro.", "example": "The patient must lie still.", "fun_fact": "Patient rights are strictly protected by law.", "image_keyword": "bed" },
+    { "word": "Smitte", "meaning": "Infection / Contagion", "kjønn": "en", "example_norsk": "Vi må stoppe smitten i samfunnet.", "example": "We must stop the infection in society.", "fun_fact": "Very common word during pandemic times.", "image_keyword": "germs" },
+    { "word": "Vaksine", "meaning": "Vaccine", "kjønn": "en", "example_norsk": "Barnevaksinasjonsprogrammet er gratis.", "example": "The child vaccination program is free.", "fun_fact": "Participation is voluntary but very high.", "image_keyword": "needle" },
+    { "word": "Allergi", "meaning": "Allergy", "kjønn": "en", "example_norsk": "Jeg har allergi mot nøtter.", "example": "I have an allergy to nuts.", "fun_fact": "Pollen allergy is very common in Norwegian spring.", "image_keyword": "flower" },
+    { "word": "Symptom", "meaning": "Symptom", "kjønn": "et", "example_norsk": "Hva er de vanligste symptomene?", "example": "What are the most common symptoms?", "fun_fact": "Fever is a common 'symptom'.", "image_keyword": "checkup" },
+    { "word": "Ulykke", "meaning": "Accident", "kjønn": "en", "example_norsk": "Det skjedde en ulykke på veien.", "example": "An accident happened on the road.", "fun_fact": "Traffic safety is a top priority (Vision Zero).", "image_keyword": "car-crash" },
+    { "word": "Nødsituasjon", "meaning": "Emergency", "kjønn": "en", "example_norsk": "Ring 113 i en nødsituasjon.", "example": "Call 113 in an emergency.", "fun_fact": "110 Fire, 112 Police, 113 Ambulance.", "image_keyword": "ambulance" },
+    { "word": "Psykolog", "meaning": "Psychologist", "kjønn": "en", "example_norsk": "Mange får hjelp av en psykolog.", "example": "Many get help from a psychologist.", "fun_fact": "Mental health is becoming more openly discussed.", "image_keyword": "talk" }
   ],
-  "City": [
-    {
-      "word": "Butikk",
-      "meaning": "Shop/Store",
-      "example_norsk": "Butikken stenger klokken åtte.",
-      "example": "The shop closes at eight o'clock.",
-      "fun_fact": "Most grocery stores in Norway are closed on Sundays.",
-      "image_keyword": "store"
-    },
-    {
-      "word": "Gate",
-      "meaning": "Street",
-      "example_norsk": "Dette er en travel gate.",
-      "example": "This is a busy street.",
-      "fun_fact": "Karl Johans gate is the main street in Oslo.",
-      "image_keyword": "street"
-    },
-    {
-      "word": "Kirke",
-      "meaning": "Church",
-      "example_norsk": "Kirken er veldig gammel.",
-      "example": "The church is very old.",
-      "fun_fact": "Norway is famous for its 'Stave Churches' (stavkirke) made of wood.",
-      "image_keyword": "stave church"
-    },
-    {
-      "word": "Sykehus",
-      "meaning": "Hospital",
-      "example_norsk": "Sykehuset ligger i sentrum.",
-      "example": "The hospital is located in the city center.",
-      "fun_fact": "Healthcare in Norwegian hospitals is free for all residents.",
-      "image_keyword": "hospital"
-    },
-    {
-      "word": "Restaurant",
-      "meaning": "Restaurant",
-      "example_norsk": "Vi skal spise på restaurant i kveld.",
-      "example": "We are going to eat at a restaurant tonight.",
-      "fun_fact": "Tipping is appreciated in Norway but not mandatory like in the US.",
-      "image_keyword": "restaurant"
-    }
+  "Samfunn og Politikk": [
+    { "word": "Demokrati", "meaning": "Democracy", "kjønn": "et", "example_norsk": "Norge er et velfungerende demokrati.", "example": "Norway is a well-functioning democracy.", "fun_fact": "Norway consistently ranks #1 on the Democracy Index.", "image_keyword": "voting" },
+    { "word": "Regjering", "meaning": "Government", "kjønn": "en", "example_norsk": "Regjeringen består av flere partier.", "example": "The government consists of several parties.", "fun_fact": "Led by the Prime Minister (Statsminister).", "image_keyword": "capital" },
+    { "word": "Stortinget", "meaning": "The Parliament", "kjønn": "et", "example_norsk": "Stortinget vedtar nye lover.", "example": "Parliament passes new laws.", "fun_fact": "Has 169 representatives elected every 4 years.", "image_keyword": "parliament" },
+    { "word": "Rettighet", "meaning": "Right", "kjønn": "en", "example_norsk": "Ytringsfrihet er en viktig rettighet.", "example": "Freedom of speech is an important right.", "fun_fact": "Constitutional rights since 1814.", "image_keyword": "law" },
+    { "word": "Plikt", "meaning": "Duty / Obligation", "kjønn": "en", "example_norsk": "Vi har plikt til å betale skatt.", "example": "We have an obligation to pay tax.", "fun_fact": "Commonly paired with 'Rettighet'.", "image_keyword": "duty" },
+    { "word": "Mangfold", "meaning": "Diversity", "kjønn": "et", "example_norsk": "Vi feirer mangfoldet i byen vår.", "example": "We celebrate the diversity in our city.", "fun_fact": "Oslo is home to over 200 nationalities.", "image_keyword": "diversity" },
+    { "word": "Likestilling", "meaning": "Equality", "kjønn": "en", "example_norsk": "Likestilling er en kjerneverdi i Norge.", "example": "Equality is a core value in Norway.", "fun_fact": "Norway is a world leader in gender equality.", "image_keyword": "scales" },
+    { "word": "Innvandring", "meaning": "Immigration", "kjønn": "en", "example_norsk": "Innvandring påvirker samfunnet.", "example": "Immigration affects society.", "fun_fact": "Around 15-20% of the population are immigrants.", "image_keyword": "travel" },
+    { "word": "Integrering", "meaning": "Integration", "kjønn": "en", "example_norsk": "Språk er nøkkelen til integrering.", "example": "Language is the key to integration.", "fun_fact": "Newcomers attend the Intro-program.", "image_keyword": "puzzle" },
+    { "word": "Valg", "meaning": "Election / Choice", "kjønn": "et", "example_norsk": "Det er valg hvert fjerde år.", "example": "There is an election every four years.", "fun_fact": "Voter turnout is usually very high in Norway.", "image_keyword": "ballot" },
+    { "word": "Borgerskap", "meaning": "Citizenship", "kjønn": "et", "example_norsk": "Han søkte om norsk borgerskap.", "example": "He applied for Norwegian citizenship.", "fun_fact": "Dual citizenship was allowed from 2020.", "image_keyword": "passport" },
+    { "word": "Skolegang", "meaning": "Schooling / Education", "kjønn": "en", "example_norsk": "Grunnskolen er obligatorisk.", "example": "Primary/Middle school is mandatory.", "fun_fact": "Compulsory from ages 6 to 16.", "image_keyword": "school" },
+    { "word": "Velferd", "meaning": "Welfare", "kjønn": "en", "example_norsk": "Den norske velferdsstaten er sterk.", "example": "The Norwegian welfare state is strong.", "fun_fact": "Paid for through high taxes and oil wealth.", "image_keyword": "help" },
+    { "word": "Ytringsfrihet", "meaning": "Freedom of speech", "kjønn": "en", "example_norsk": "Vi må beskytte ytringsfriheten.", "example": "We must protect freedom of speech.", "fun_fact": "Section 100 of the Constitution.", "image_keyword": "speech" },
+    { "word": "Lovverk", "meaning": "Legislation", "kjønn": "et", "example_norsk": "Vi må følge norsk lovverk.", "example": "We must follow Norwegian legislation.", "fun_fact": "Gathered in the 'Norges Lover' book.", "image_keyword": "gavel" },
+    { "word": "Domstol", "meaning": "Court of law", "kjønn": "en", "example_norsk": "Saken skal opp i domstolen.", "example": "The case is going to court.", "fun_fact": "The highest is 'Høyesterett'.", "image_keyword": "court" },
+    { "word": "Økonomi", "meaning": "Economy", "kjønn": "en", "example_norsk": "Landets økonomi er stabil.", "example": "The country's economy is stable.", "fun_fact": "Relies heavily on oil, gas, and seafood.", "image_keyword": "stock" },
+    { "word": "Miljøvern", "meaning": "Environmental protection", "kjønn": "et", "example_norsk": "Vi må prioritere miljøvern.", "example": "We must prioritize environmental protection.", "fun_fact": "Norway has 47 national parks.", "image_keyword": "nature" },
+    { "word": "Skattesystem", "meaning": "Tax system", "kjønn": "et", "example_norsk": "Skattesystemet er progressivt.", "example": "The tax system is progressive.", "fun_fact": "The more you earn, the higher the percentage.", "image_keyword": "calculator" },
+    { "word": "Forvaltning", "meaning": "Administration / Management", "kjønn": "en", "example_norsk": "Offentlig forvaltning må være effektiv.", "example": "Public administration must be efficient.", "fun_fact": "Divided into State and Municipality levels.", "image_keyword": "files" }
   ],
-  "Colors": [
-    {
-      "word": "Svart",
-      "meaning": "Black",
-      "example_norsk": "Katten min er helt svart.",
-      "example": "My cat is completely black.",
-      "fun_fact": "Licorice (lakris) is a very popular black candy in Norway.",
-      "image_keyword": "black cat"
-    },
-    {
-      "word": "Grå",
-      "meaning": "Grey",
-      "example_norsk": "Himmelen er grå i dag.",
-      "example": "The sky is grey today.",
-      "fun_fact": "The word 'gråvær' (grey weather) is common for overcast days.",
-      "image_keyword": "grey clouds"
-    },
-    {
-      "word": "Brun",
-      "meaning": "Brun",
-      "example_norsk": "Bjørnen har brun pels.",
-      "example": "The bear has brown fur.",
-      "fun_fact": "Brunost (brown cheese) is an iconic Norwegian food made from whey.",
-      "image_keyword": "brown cheese"
-    },
-    {
-      "word": "Oransje",
-      "meaning": "Orange",
-      "example_norsk": "Appelsinen er oransje.",
-      "example": "The orange is orange.",
-      "fun_fact": "Oranges are a traditional snack during Easter skiing trips.",
-      "image_keyword": "orange fruit"
-    },
-    {
-      "word": "Lilla",
-      "meaning": "Purple",
-      "example_norsk": "Blomsten er vakker og lilla.",
-      "example": "The flower is beautiful and purple.",
-      "fun_fact": "Purple is the traditional color of Advent in Norway.",
-      "image_keyword": "purple flower"
-    }
+  "Reise og Kultur": [
+    { "word": "Destinasjon", "meaning": "Destination", "kjønn": "en", "example_norsk": "Hva er din favoritt-destinasjon?", "example": "What is your favorite destination?", "fun_fact": "Lofoten is a top destination for tourists.", "image_keyword": "map" },
+    { "word": "Tradisjon", "meaning": "Tradition", "kjønn": "en", "example_norsk": "Vi har mange juletradisjoner.", "example": "We have many Christmas traditions.", "fun_fact": "17th of May is the biggest tradition of all.", "image_keyword": "parade" },
+    { "word": "Severdighet", "meaning": "Sight / Attraction", "kjønn": "en", "example_norsk": "Vigelandsparken er en stor severdighet.", "example": "Vigeland Park is a major attraction.", "fun_fact": "Suffix -het creates the noun from 'verdig' (worthy).", "image_keyword": "statue" },
+    { "word": "Overnatting", "meaning": "Accommodation", "kjønn": "en", "example_norsk": "Vi må bestille overnatting i Bergen.", "example": "We have to book accommodation in Bergen.", "fun_fact": "Includes hotels, cabins (hytter), and camping.", "image_keyword": "hotel" },
+    { "word": "Opplevelse", "meaning": "Experience", "kjønn": "en", "example_norsk": "Det var en fantastisk opplevelse.", "example": "It was a fantastic experience.", "fun_fact": "Used for events, travel, and feelings.", "image_keyword": "mountain" },
+    { "word": "Bagasje", "meaning": "Luggage", "kjønn": "en", "example_norsk": "Hvor kan jeg hente bagasjen?", "example": "Where can I pick up my luggage?", "fun_fact": "Commonly used as 'håndbagasje' on planes.", "image_keyword": "suitcase" },
+    { "word": "Billett", "meaning": "Ticket", "kjønn": "en", "example_norsk": "Hvor mye koster en billett?", "example": "How much does a ticket cost?", "fun_fact": "Most tickets are now digital (Ruter, Vy).", "image_keyword": "ticket" },
+    { "word": "Flyplass", "meaning": "Airport", "kjønn": "en", "example_norsk": "Vi må være på flyplassen tidlig.", "example": "We must be at the airport early.", "fun_fact": "Oslo Airport Gardermoen is the largest.", "image_keyword": "airplane" },
+    { "word": "Utstilling", "meaning": "Exhibition", "kjønn": "en", "example_norsk": "Vi skal på en kunstutstilling.", "example": "We are going to an art exhibition.", "fun_fact": "The Munch Museum is world famous.", "image_keyword": "art" },
+    { "word": "Landskap", "meaning": "Landscape", "kjønn": "et", "example_norsk": "Norge har et vakkert landskap.", "example": "Norway has a beautiful landscape.", "fun_fact": "Famous for fjords and steep mountains.", "image_keyword": "view" },
+    { "word": "Nasjonalitet", "meaning": "Nationality", "kjønn": "en", "example_norsk": "Hvilken nasjonalitet har du?", "example": "What nationality are you?", "fun_fact": "Norwegian is 'Norsk'.", "image_keyword": "flag" },
+    { "word": "Språk", "meaning": "Language", "kjønn": "et", "example_norsk": "Det er gøy å lære et nytt språk.", "example": "It is fun to learn a new language.", "fun_fact": "Norway has two official written forms: Bokmål and Nynorsk.", "image_keyword": "books" },
+    { "word": "Helligdag", "meaning": "Public holiday", "kjønn": "en", "example_norsk": "Butikken er stengt på helligdager.", "example": "The store is closed on public holidays.", "fun_fact": "Called 'røde dager' in Norwegian.", "image_keyword": "calendar-red" },
+    { "word": "Kultur", "meaning": "Culture", "kjønn": "en", "example_norsk": "Vi må respektere ulike kulturer.", "example": "We must respect different cultures.", "fun_fact": "Culture includes food, music, and social norms.", "image_keyword": "theater" },
+    { "word": "Historie", "meaning": "History / Story", "kjønn": "en", "example_norsk": "Norsk historie er spennende.", "example": "Norwegian history is exciting.", "fun_fact": "Viking history is known worldwide.", "image_keyword": "viking" },
+    { "word": "Musikk", "meaning": "Music", "kjønn": "en", "example_norsk": "Hva slags musikk liker du?", "example": "What kind of music do you like?", "fun_fact": "Norway has a huge metal and pop scene.", "image_keyword": "guitar" },
+    { "word": "Idrett", "meaning": "Sport / Athletics", "kjønn": "en", "example_norsk": "Ski er nasjonalidretten i Norge.", "example": "Skiing is the national sport in Norway.", "fun_fact": "Norway has the most Winter Olympic medals.", "image_keyword": "skis" },
+    { "word": "Religion", "meaning": "Religion", "kjønn": "en", "example_norsk": "Det er religionsfrihet i Norge.", "example": "There is freedom of religion in Norway.", "fun_fact": "Most belong to the Church of Norway.", "image_keyword": "church" },
+    { "word": "Kunst", "meaning": "Art", "kjønn": "en", "example_norsk": "Hun studerer kunst i Oslo.", "example": "She studies art in Oslo.", "fun_fact": "Edvard Munch is Norway's most famous artist.", "image_keyword": "paint" },
+    { "word": "Litteratur", "meaning": "Literature", "kjønn": "en", "example_norsk": "Jeg elsker norsk litteratur.", "example": "I love Norwegian literature.", "fun_fact": "Norway has produced three Nobel prize winners in literature.", "image_keyword": "reading" }
   ],
-  "Verbs": [
-    {
-      "word": "Løpe",
-      "meaning": "To Run",
-      "example_norsk": "Jeg liker å løpe i skogen.",
-      "example": "I like to run in the forest.",
-      "fun_fact": "Norway holds many world records in middle-distance running.",
-      "image_keyword": "running"
-    },
-    {
-      "word": "Lese",
-      "meaning": "To Read",
-      "example_norsk": "Han leser avisen hver morgen.",
-      "example": "He reads the newspaper every morning.",
-      "fun_fact": "'Påskekrim' is a tradition where Norwegians read crime novels during Easter.",
-      "image_keyword": "reading"
-    },
-    {
-      "word": "Skrive",
-      "meaning": "To Write",
-      "example_norsk": "Jeg skriver et brev til bestemor.",
-      "example": "I am writing a letter to grandmother.",
-      "fun_fact": "The Norwegian alphabet has three extra letters: Æ, Ø, and Å.",
-      "image_keyword": "writing"
-    },
-    {
-      "word": "Snakke",
-      "meaning": "To Speak/Talk",
-      "example_norsk": "Kan du snakke norsk?",
-      "example": "Can you speak Norwegian?",
-      "fun_fact": "There are hundreds of different dialects in Norway.",
-      "image_keyword": "talking"
-    },
-    {
-      "word": "Sove",
-      "meaning": "To Sleep",
-      "example_norsk": "Jeg må sove nå.",
-      "example": "I have to sleep now.",
-      "fun_fact": "Babies in Norway often nap outside in their strollers, even in winter!",
-      "image_keyword": "sleeping"
-    }
+  "Natur og Miljø": [
+    { "word": "Bærekraft", "meaning": "Sustainability", "kjønn": "en", "example_norsk": "Vi må velge bærekraftige løsninger.", "example": "We must choose sustainable solutions.", "fun_fact": "A very common word in B1-B2 discussions.", "image_keyword": "earth" },
+    { "word": "Klimaendring", "meaning": "Climate change", "kjønn": "en", "example_norsk": "Klimaendringene er en global trussel.", "example": "Climate changes are a global threat.", "fun_fact": "Affects the snow season in Norway.", "image_keyword": "melting-ice" },
+    { "word": "Miljøvern", "meaning": "Environmentalism", "kjønn": "et", "example_norsk": "Hun jobber med miljøvern.", "example": "She works with environmentalism.", "fun_fact": "Suffix -vern means protection.", "image_keyword": "green" },
+    { "word": "Forurensning", "meaning": "Pollution", "kjønn": "en", "example_norsk": "Vi må redusere plastforurensning.", "example": "We must reduce plastic pollution.", "fun_fact": "Electric cars help reduce local pollution.", "image_keyword": "smoke" },
+    { "word": "Kildesortering", "meaning": "Waste sorting / Recycling", "kjønn": "en", "example_norsk": "Kildesortering er enkelt og viktig.", "example": "Waste sorting is easy and important.", "fun_fact": "Oslo uses blue bags for plastic and green for food.", "image_keyword": "recycling" },
+    { "word": "Naturressurs", "meaning": "Natural resource", "kjønn": "en", "example_norsk": "Olje er en viktig naturressurs.", "example": "Oil is an important natural resource.", "fun_fact": "Fish and hydropower are also vital.", "image_keyword": "oil" },
+    { "word": "Energi", "meaning": "Energy", "kjønn": "en", "example_norsk": "Vi trenger mer fornybar energi.", "example": "We need more renewable energy.", "fun_fact": "98% of Norway's power is hydroelectric.", "image_keyword": "waterfall" },
+    { "word": "Vær", "meaning": "Weather", "kjønn": "et", "example_norsk": "Været i Norge skifter fort.", "example": "The weather in Norway changes fast.", "fun_fact": "'Det finnes ikke dårlig vær, bare dårlige klær!'.", "image_keyword": "rain" },
+    { "word": "Skog", "meaning": "Forest", "kjønn": "en", "example_norsk": "Det er vakkert å gå i skogen.", "example": "It is beautiful to walk in the forest.", "fun_fact": "Almost 40% of Norway is forest.", "image_keyword": "forest" },
+    { "word": "Fjell", "meaning": "Mountain", "kjønn": "et", "example_norsk": "Vi skal på fjellet i påsken.", "example": "We are going to the mountains at Easter.", "fun_fact": "Galdhøpiggen is the highest (2469m).", "image_keyword": "mountains" },
+    { "word": "Fjord", "meaning": "Fjord", "kjønn": "en", "example_norsk": "Geirangerfjorden er på UNESCO-listen.", "example": "Geirangerfjord is on the UNESCO list.", "fun_fact": "Formed by glaciers during the ice age.", "image_keyword": "fjord" },
+    { "word": "Kyst", "meaning": "Coast", "kjønn": "en", "example_norsk": "Norge har en veldig lang kyst.", "example": "Norway has a very long coast.", "fun_fact": "Second longest in the world after Canada.", "image_keyword": "ocean" },
+    { "word": "Årstid", "meaning": "Season", "kjønn": "en", "example_norsk": "Hvilken årstid liker du best?", "example": "Which season do you like best?", "fun_fact": "Norway has four very distinct seasons.", "image_keyword": "seasons" },
+    { "word": "Sol", "meaning": "Sun", "kjønn": "en", "example_norsk": "Solen skinner endelig i dag.", "example": "The sun is finally shining today.", "fun_fact": "Midnight sun (midnattssol) in the north.", "image_keyword": "sun" },
+    { "word": "Snø", "meaning": "Snow", "kjønn": "en", "example_norsk": "Barna leker i snøen.", "example": "The children are playing in the snow.", "fun_fact": "Norwegians say 'født med ski på beina'.", "image_keyword": "snow" },
+    { "word": "Vind", "meaning": "Wind", "kjønn": "en", "example_norsk": "Det blåser en kald vind fra nord.", "example": "A cold wind is blowing from the north.", "fun_fact": "Wind power is a debated topic in Norway.", "image_keyword": "wind" },
+    { "word": "Hav", "meaning": "Ocean / Sea", "kjønn": "et", "example_norsk": "Havet er fullt av fisk.", "example": "The ocean is full of fish.", "fun_fact": "The North Sea is key for oil and wind.", "image_keyword": "sea" },
+    { "word": "Dyr", "meaning": "Animal", "kjønn": "et", "example_norsk": "Elgen er skogens konge.", "example": "The moose is the king of the forest.", "fun_fact": "Norway has wolves, bears, and reindeer too.", "image_keyword": "moose" },
+    { "word": "Planter", "meaning": "Plants", "kjønn": "en", "example_norsk": "Vi har mange planter i stua.", "example": "We have many plants in the living room.", "fun_fact": "Norwegians love 'friluftsliv' (outdoor life).", "image_keyword": "plants" },
+    { "word": "Økologi", "meaning": "Ecology / Organic", "kjønn": "en", "example_norsk": "Jeg kjøper alltid økologisk melk.", "example": "I always buy organic milk.", "fun_fact": "Organic food is marked with the 'Ø' label.", "image_keyword": "organic" }
   ],
-  "Furniture": [
-    {
-      "word": "Bord",
-      "meaning": "Table",
-      "example_norsk": "Maten står på bordet.",
-      "example": "The food is on the table.",
-      "fun_fact": "Scandinavian design often uses light-colored wood for tables.",
-      "image_keyword": "wooden table"
-    },
-    {
-      "word": "Stol",
-      "meaning": "Chair",
-      "example_norsk": "Sett deg på stolen.",
-      "example": "Sit down on the chair.",
-      "fun_fact": "Peter Opsvik is a famous Norwegian designer who made the Tripp Trapp chair.",
-      "image_keyword": "chair"
-    },
-    {
-      "word": "Sofa",
-      "meaning": "Sofa/Couch",
-      "example_norsk": "Vi slapper av i sofaen.",
-      "example": "We are relaxing on the sofa.",
-      "fun_fact": "The word 'koselig' often involves sitting on a sofa with a blanket.",
-      "image_keyword": "cozy sofa"
-    },
-    {
-      "word": "Hylle",
-      "meaning": "Shelf",
-      "example_norsk": "Bøkene står i hylla.",
-      "example": "The books are on the shelf.",
-      "fun_fact": "Modular shelving units are a staple of Norwegian interior design.",
-      "image_keyword": "bookshelf"
-    },
-    {
-      "word": "Lampe",
-      "meaning": "Lamp",
-      "example_norsk": "Lampen gir et varmt lys.",
-      "example": "The lamp gives off a warm light.",
-      "fun_fact": "Lighting is very important in Norway due to the dark winter months.",
-      "image_keyword": "lamp"
-    }
+  "Økonomi og Penger": [
+    { "word": "Budsjett", "meaning": "Budget", "kjønn": "et", "example_norsk": "Vi må sette opp et månedsbudsjett.", "example": "We need to set up a monthly budget.", "fun_fact": "Norwegians use apps like Vipps for almost everything.", "image_keyword": "budget" },
+    { "word": "Lån", "meaning": "Loan", "kjønn": "et", "example_norsk": "Boliglånet har høy rente nå.", "example": "The mortgage has a high interest rate now.", "fun_fact": "Most Norwegians own their own homes via bank loans.", "image_keyword": "bank" },
+    { "word": "Rente", "meaning": "Interest rate", "kjønn": "en", "example_norsk": "Sentralbanken har satt opp renten.", "example": "The central bank has increased the interest rate.", "fun_fact": "Interest on debt is tax-deductible in Norway.", "image_keyword": "percentage" },
+    { "word": "Forsikring", "meaning": "Insurance", "kjønn": "en", "example_norsk": "Har du reiseforsikring?", "example": "Do you have travel insurance?", "fun_fact": "Travel and home insurance are highly recommended in Norway.", "image_keyword": "shield" },
+    { "word": "Gjeld", "meaning": "Debt", "kjønn": "en", "example_norsk": "Det er viktig å betale ned gjeld.", "example": "It is important to pay off debt.", "fun_fact": "Student debt is managed by Lånekassen.", "image_keyword": "debt" },
+    { "word": "Sparing", "meaning": "Savings", "kjønn": "en", "example_norsk": "Sparing er lurt for fremtiden.", "example": "Saving is wise for the future.", "fun_fact": "BSU is a special savings account for young home buyers.", "image_keyword": "piggy-bank" },
+    { "word": "Beløp", "meaning": "Amount", "kjønn": "et", "example_norsk": "Hvilket beløp skal jeg overføre?", "example": "What amount should I transfer?", "fun_fact": "The currency is the Norwegian Krone (NOK).", "image_keyword": "money" },
+    { "word": "Faktura", "meaning": "Invoice", "kjønn": "en", "example_norsk": "Jeg fikk en faktura i posten.", "example": "I received an invoice in the mail.", "fun_fact": "Most invoices are now 'e-faktura' in your bank app.", "image_keyword": "bill" },
+    { "word": "Kvittering", "meaning": "Receipt", "kjønn": "en", "example_norsk": "Husk å ta med kvitteringen.", "example": "Remember to take the receipt.", "fun_fact": "You need this for returns (bytte).", "image_keyword": "receipt" },
+    { "word": "Rabatt", "meaning": "Discount", "kjønn": "en", "example_norsk": "Jeg fikk tjue prosent rabatt.", "example": "I got a twenty percent discount.", "fun_fact": "Seasonal sales are called 'salg'.", "image_keyword": "sale" },
+    { "word": "Forbruk", "meaning": "Consumption", "kjønn": "et", "example_norsk": "Vi må redusere strømforbruket vårt.", "example": "We must reduce our electricity consumption.", "fun_fact": "Norway has high electricity use due to cold winters.", "image_keyword": "energy" },
+    { "word": "Avtale", "meaning": "Agreement / Contract", "kjønn": "en", "example_norsk": "Vi har signert en ny avtale.", "example": "We have signed a new agreement.", "fun_fact": "A verbal agreement is legally binding in Norway.", "image_keyword": "handshake" },
+    { "word": "Investering", "meaning": "Investment", "kjønn": "en", "example_norsk": "Eiendom er en god investering.", "example": "Real estate is a good investment.", "fun_fact": "The 'Oil Fund' is Norway's largest investment.", "image_keyword": "growth" },
+    { "word": "Konto", "meaning": "Account", "kjønn": "en", "example_norsk": "Jeg må sjekke saldoen på min konto.", "example": "I need to check the balance on my account.", "fun_fact": "You need a BankID to access most accounts.", "image_keyword": "card" },
+    { "word": "Gebyr", "meaning": "Fee", "kjønn": "et", "example_norsk": "Det tilkommer et lite gebyr.", "example": "There is a small fee added.", "fun_fact": "Banks have removed most daily transaction fees.", "image_keyword": "extra" },
+    { "word": "Lønn", "meaning": "Salary / Wage", "kjønn": "en", "example_norsk": "Lønnen utbetales den femtende.", "example": "The salary is paid on the fifteenth.", "fun_fact": "Norway has no national minimum wage, but unions set rates.", "image_keyword": "payday" },
+    { "word": "Skattemelding", "meaning": "Tax return", "kjønn": "en", "example_norsk": "Skattemeldingen kommer i mars.", "example": "The tax return arrives in March.", "fun_fact": "Most of it is pre-filled by the government.", "image_keyword": "document" },
+    { "word": "Valuta", "meaning": "Currency", "kjønn": "en", "example_norsk": "Hva er kursen på valutaen?", "example": "What is the exchange rate for the currency?", "fun_fact": "NOK is known as a 'petro-currency'.", "image_keyword": "exchange" },
+    { "word": "Eierskap", "meaning": "Ownership", "kjønn": "et", "example_norsk": "Eierskap gir både makt og ansvar.", "example": "Ownership gives both power and responsibility.", "fun_fact": "State ownership is high in Norway.", "image_keyword": "key" },
+    { "word": "Konkurranse", "meaning": "Competition", "kjønn": "en", "example_norsk": "Det er hard konkurranse i markedet.", "example": "There is tough competition in the market.", "fun_fact": "Norway has strict anti-monopoly laws.", "image_keyword": "race" }
   ],
-  "Kitchen_Tools": [
-    {
-      "word": "Gaffel",
-      "meaning": "Fork",
-      "example_norsk": "Jeg spiser salat med en gaffel.",
-      "example": "I eat salad with a fork.",
-      "fun_fact": "Traditional Norwegian silver forks often have intricate patterns.",
-      "image_keyword": "fork"
-    },
-    {
-      "word": "Skje",
-      "meaning": "Spoon",
-      "example_norsk": "Kan jeg få en skje til suppen?",
-      "example": "Can I have a spoon for the soup?",
-      "fun_fact": "Wooden spoons are common for stirring 'grøt' (porridge).",
-      "image_keyword": "spoon"
-    },
-    {
-      "word": "Tallerken",
-      "meaning": "Plate",
-      "example_norsk": "Sett tallerkenen i oppvaskmaskinen.",
-      "example": "Put the plate in the dishwasher.",
-      "fun_fact": "A 'flatbrød' is a traditional crispy bread served on a side plate.",
-      "image_keyword": "dinner plate"
-    },
-    {
-      "word": "Kopp",
-      "meaning": "Cup/Mug",
-      "example_norsk": "Vil du ha en kopp kaffe?",
-      "example": "Do you want a cup of coffee?",
-      "fun_fact": "Norwegians love 'turkopp', a wooden cup used for hiking.",
-      "image_keyword": "coffee mug"
-    },
-    {
-      "word": "Glass",
-      "meaning": "Glass",
-      "example_norsk": "Glasset er fullt av juice.",
-      "example": "The glass is full of juice.",
-      "fun_fact": "Hadeland Glassverk is one of Norway's oldest industrial companies.",
-      "image_keyword": "water glass"
-    }
+  "Hjem og Bolig": [
+    { "word": "Leilighet", "meaning": "Apartment", "kjønn": "en", "example_norsk": "Jeg leier en leilighet i sentrum.", "example": "I rent an apartment downtown.", "fun_fact": "Basement apartments (sokkelleilighet) are common.", "image_keyword": "apartment" },
+    { "word": "Enebolig", "meaning": "Detached house", "kjønn": "en", "example_norsk": "De bor i en stor enebolig.", "example": "They live in a large detached house.", "fun_fact": "Most 'eneboliger' are built from wood.", "image_keyword": "house" },
+    { "word": "Leiekontrakt", "meaning": "Rental contract", "kjønn": "en", "example_norsk": "Husk å lese leiekontrakten nøye.", "example": "Remember to read the rental contract carefully.", "fun_fact": "The standard notice is usually 3 months.", "image_keyword": "contract" },
+    { "word": "Depositum", "meaning": "Deposit", "kjønn": "et", "example_norsk": "Du må betale tre måneders depositum.", "example": "You must pay three months' deposit.", "fun_fact": "This must be placed in a special bank account.", "image_keyword": "money-safe" },
+    { "word": "Nabo", "meaning": "Neighbor", "kjønn": "en", "example_norsk": "Vi har veldig hyggelige naboer.", "example": "We have very nice neighbors.", "fun_fact": "'Dugnad' is a common neighborly tradition.", "image_keyword": "neighbors" },
+    { "word": "Borettslag", "meaning": "Housing cooperative", "kjønn": "et", "example_norsk": "Borettslaget har strenge regler.", "example": "The housing cooperative has strict rules.", "fun_fact": "Shared costs are called 'felleskostnader'.", "image_keyword": "buildings" },
+    { "word": "Oppussing", "meaning": "Renovation", "kjønn": "en", "example_norsk": "Vi driver med oppussing av kjøkkenet.", "example": "We are renovating the kitchen.", "fun_fact": "Norwegians spend the most on home renovation in Europe.", "image_keyword": "tools" },
+    { "word": "Møbel", "meaning": "Furniture", "kjønn": "et", "example_norsk": "Vi trenger nye møbler til stua.", "example": "We need new furniture for the living room.", "fun_fact": "Scandinavian design is famous worldwide.", "image_keyword": "sofa" },
+    { "word": "Strøm", "meaning": "Electricity", "kjønn": "en", "example_norsk": "Strømmen er dyr om vinteren.", "example": "Electricity is expensive in the winter.", "fun_fact": "Heating is usually electrical in Norway.", "image_keyword": "power" },
+    { "word": "Renovasjon", "meaning": "Waste management", "kjønn": "en", "example_norsk": "Renovasjon skjer hver tirsdag.", "example": "Trash pickup happens every Tuesday.", "fun_fact": "You pay a municipal fee for this.", "image_keyword": "garbage" },
+    { "word": "Hage", "meaning": "Garden", "kjønn": "en", "example_norsk": "Barna leker i hagen.", "example": "The children are playing in the garden.", "fun_fact": "Growing potatoes was a survival skill in Norway.", "image_keyword": "garden" },
+    { "word": "Kjeller", "meaning": "Basement", "kjønn": "en", "example_norsk": "Vi har mye rot i kjelleren.", "example": "We have a lot of clutter in the basement.", "fun_fact": "Most Norwegian houses have a dry cellar.", "image_keyword": "stairs" },
+    { "word": "Loft", "meaning": "Attic", "kjønn": "et", "example_norsk": "Loftet brukes til lagring.", "example": "The attic is used for storage.", "fun_fact": "Related to the word 'luft' (air).", "image_keyword": "attic" },
+    { "word": "Heis", "meaning": "Elevator", "kjønn": "en", "example_norsk": "Heisen er i ustand.", "example": "The elevator is out of order.", "fun_fact": "Required in all new buildings over a certain height.", "image_keyword": "elevator" },
+    { "word": "Balkong", "meaning": "Balcony", "kjønn": "en", "example_norsk": "Det er deilig å sitte på balkongen.", "example": "It is lovely to sit on the balcony.", "fun_fact": "Vital for enjoying the midnight sun.", "image_keyword": "balcony" },
+    { "word": "Eiendomsmarked", "meaning": "Real estate market", "kjønn": "et", "example_norsk": "Eiendomsmarkedet er stabilt nå.", "example": "The real estate market is stable now.", "fun_fact": "Bidding wars (budrunde) are very fast-paced.", "image_keyword": "market" },
+    { "word": "Flytting", "meaning": "Moving", "kjønn": "en", "example_norsk": "Flytting er alltid slitsomt.", "example": "Moving is always tiring.", "fun_fact": "You must notify the 'Folkeregister' when you move.", "image_keyword": "boxes" },
+    { "word": "Vaskeri", "meaning": "Laundry room", "kjønn": "et", "example_norsk": "Vi har felles vaskeri i blokka.", "example": "We have a shared laundry room in the building.", "fun_fact": "Most people have their own washing machines now.", "image_keyword": "wash" },
+    { "word": "Strømstøtte", "meaning": "Electricity subsidy", "kjønn": "en", "example_norsk": "Regjeringen gir strømstøtte.", "example": "The government provides electricity subsidies.", "fun_fact": "Introduced to help with high energy prices.", "image_keyword": "help-bill" },
+    { "word": "Vedlikehold", "meaning": "Maintenance", "kjønn": "et", "example_norsk": "Huset krever mye vedlikehold.", "example": "The house requires a lot of maintenance.", "fun_fact": "Painting every few years is essential for wooden houses.", "image_keyword": "painting" }
   ],
-  "Geography": [
-    {
-      "word": "Land",
-      "meaning": "Country",
-      "example_norsk": "Norge er et vakkert land.",
-      "example": "Norway is a beautiful country.",
-      "fun_fact": "Norway shares borders with Sweden, Finland, and Russia.",
-      "image_keyword": "norway map"
-    },
-    {
-      "word": "By",
-      "meaning": "City",
-      "example_norsk": "Oslo er den største byen i Norge.",
-      "example": "Oslo is the largest city in Norway.",
-      "fun_fact": "Bergen and Trondheim were both capitals of Norway before Oslo.",
-      "image_keyword": "city skyline"
-    },
-    {
-      "word": "Hovedstad",
-      "meaning": "Capital",
-      "example_norsk": "Oslo er hovedstaden i Norge.",
-      "example": "Oslo is the capital of Norway.",
-      "fun_fact": "The Royal Palace is located at the end of the main street in the capital.",
-      "image_keyword": "oslo palace"
-    },
-    {
-      "word": "Verden",
-      "meaning": "World",
-      "example_norsk": "Jeg vil reise rundt i verden.",
-      "example": "I want to travel around the world.",
-      "fun_fact": "Norway is one of the northernmost countries in the world.",
-      "image_keyword": "globe"
-    },
-    {
-      "word": "Kart",
-      "meaning": "Map",
-      "example_norsk": "Vi må se på kartet.",
-      "example": "We have to look at the map.",
-      "fun_fact": "Paper maps are still popular for hiking in the Norwegian mountains.",
-      "image_keyword": "map"
-    }
+  "Teknologi og Media": [
+    { "word": "Internett", "meaning": "Internet", "kjønn": "et", "example_norsk": "Internettet er nede i dag.", "example": "The internet is down today.", "fun_fact": "Norway has some of the world's fastest mobile internet.", "image_keyword": "wifi" },
+    { "word": "Passord", "meaning": "Password", "kjønn": "et", "example_norsk": "Ikke del passordet ditt med andre.", "example": "Do not share your password with others.", "fun_fact": "BankID is the standard for secure login.", "image_keyword": "lock" },
+    { "word": "Nedlasting", "meaning": "Download", "kjønn": "en", "example_norsk": "Nedlastingen tok lang tid.", "example": "The download took a long time.", "fun_fact": "Comes from 'å laste ned'.", "image_keyword": "download" },
+    { "word": "Sosiale medier", "meaning": "Social media", "kjønn": "flertall", "example_norsk": "Barn bruker mye tid på sosiale medier.", "example": "Children spend a lot of time on social media.", "fun_fact": "Norway has one of the highest social media penetrations.", "image_keyword": "smartphone" },
+    { "word": "Skjerm", "meaning": "Screen", "kjønn": "en", "example_norsk": "Skjermen på mobilen min er knust.", "example": "The screen on my phone is broken.", "fun_fact": "Suffix -en makes it 'the screen'.", "image_keyword": "monitor" },
+    { "word": "Programvare", "meaning": "Software", "kjønn": "en", "example_norsk": "Vi må installere ny programvare.", "example": "We need to install new software.", "fun_fact": "Opposite is 'maskinvare' (hardware).", "image_keyword": "code" },
+    { "word": "Nettside", "meaning": "Website", "kjønn": "en", "example_norsk": "Nettsiden deres er brukervennlig.", "example": "Their website is user-friendly.", "fun_fact": "Ends in .no for Norwegian sites.", "image_keyword": "web" },
+    { "word": "Sikkerhet", "meaning": "Security", "kjønn": "en", "example_norsk": "Datasikkerhet er viktig for firmaet.", "example": "Data security is important for the company.", "fun_fact": "Suffix -het creates the abstract noun.", "image_keyword": "secure" },
+    { "word": "Strømming", "meaning": "Streaming", "kjønn": "en", "example_norsk": "Strømming har erstattet DVDer.", "example": "Streaming has replaced DVDs.", "fun_fact": "Norway has many local streaming services like TV2 Play.", "image_keyword": "play" },
+    { "word": "Kunstig intelligens", "meaning": "Artificial Intelligence", "kjønn": "en", "example_norsk": "Kunstig intelligens endrer verden.", "example": "AI is changing the world.", "fun_fact": "Abbreviated as KI in Norwegian.", "image_keyword": "robot" },
+    { "word": "Utvikler", "meaning": "Developer", "kjønn": "en", "example_norsk": "Han jobber som programvareutvikler.", "example": "He works as a software developer.", "fun_fact": "A very high-demand job in Oslo.", "image_keyword": "coding" },
+    { "word": "Vise", "meaning": "Show / Display", "kjønn": "en", "example_norsk": "Kan du vise meg hvordan det virker?", "example": "Can you show me how it works?", "fun_fact": "Used both as a verb and noun.", "image_keyword": "show" },
+    { "word": "Tilkobling", "meaning": "Connection", "kjønn": "en", "example_norsk": "Jeg har dårlig tilkobling her.", "example": "I have a poor connection here.", "fun_fact": "Commonly used for Wi-Fi.", "image_keyword": "plug" },
+    { "word": "Oppdatering", "meaning": "Update", "kjønn": "en", "example_norsk": "Systemet trenger en oppdatering.", "example": "The system needs an update.", "fun_fact": "Most Norwegian apps update frequently.", "image_keyword": "refresh" },
+    { "word": "E-post", "meaning": "Email", "kjønn": "en", "example_norsk": "Send meg en e-post med detaljene.", "example": "Send me an email with the details.", "fun_fact": "Still the main form of formal communication.", "image_keyword": "mail" },
+    { "word": "Søk", "meaning": "Search", "kjønn": "et", "example_norsk": "Gjør et søk på Google.", "example": "Do a search on Google.", "fun_fact": "Comes from the verb 'å søke'.", "image_keyword": "search" },
+    { "word": "Lagring", "meaning": "Storage", "kjønn": "en", "example_norsk": "Skyen gir ubegrenset lagring.", "example": "The cloud gives unlimited storage.", "fun_fact": "Common for photos and files.", "image_keyword": "cloud" },
+    { "word": "Brukernavn", "meaning": "Username", "kjønn": "et", "example_norsk": "Hva er ditt brukernavn?", "example": "What is your username?", "fun_fact": "Often your email address in Norway.", "image_keyword": "user" },
+    { "word": "Digitalisering", "meaning": "Digitization", "kjønn": "en", "example_norsk": "Digitalisering gjør livet enklere.", "example": "Digitization makes life easier.", "fun_fact": "Norway is one of the most digitized nations.", "image_keyword": "binary" },
+    { "word": "Personvern", "meaning": "Privacy / Data protection", "kjønn": "et", "example_norsk": "Vi må ta hensyn til personvern.", "example": "We must consider data privacy.", "fun_fact": "GDPR laws are very strict in Norway.", "image_keyword": "privacy" }
   ],
-  "Post_Office": [
-    {
-      "word": "Brev",
-      "meaning": "Letter",
-      "example_norsk": "Jeg fikk et brev i posten.",
-      "example": "I received a letter in the mail.",
-      "fun_fact": "Posten Norge was founded in 1647.",
-      "image_keyword": "envelope"
-    },
-    {
-      "word": "Pakke",
-      "meaning": "Package/Parcel",
-      "example_norsk": "Pakken er til deg.",
-      "example": "The package is for you.",
-      "fun_fact": "Most Norwegians pick up packages at 'Post i Butikk' (post inside a grocery store).",
-      "image_keyword": "cardboard box"
-    },
-    {
-      "word": "Frimerke",
-      "meaning": "Stamp",
-      "example_norsk": "Husk å sette på frimerke.",
-      "example": "Remember to put on a stamp.",
-      "fun_fact": "The first Norwegian postage stamp was issued in 1855.",
-      "image_keyword": "postage stamp"
-    },
-    {
-      "word": "Adresse",
-      "meaning": "Address",
-      "example_norsk": "Hva er adressen din?",
-      "example": "What is your address?",
-      "fun_fact": "Norwegian addresses always include a four-digit postal code.",
-      "image_keyword": "house number"
-    },
-    {
-      "word": "Postkasse",
-      "meaning": "Mailbox",
-      "example_norsk": "Postkassen er tom.",
-      "example": "The mailbox is empty.",
-      "fun_fact": "Green is the standard color for private mailboxes in Norway.",
-      "image_keyword": "mailbox"
-    }
+  "Hverdagsliv": [
+    { "word": "Rutine", "meaning": "Routine", "kjønn": "en", "example_norsk": "Jeg liker å ha en fast rutine.", "example": "I like having a fixed routine.", "fun_fact": "Morning coffee is a sacred routine in Norway.", "image_keyword": "routine" },
+    { "word": "Vane", "meaning": "Habit", "kjønn": "en", "example_norsk": "Det er vanskelig å bryte en vane.", "example": "It's hard to break a habit.", "fun_fact": "A bad habit is an 'uvane'.", "image_keyword": "habit" },
+    { "word": "Fritid", "meaning": "Free time", "kjønn": "en", "example_norsk": "Hva gjør du i fritiden din?", "example": "What do you do in your free time?", "fun_fact": "Friluftsliv is the most popular use of fritid.", "image_keyword": "hobby" },
+    { "word": "Hobby", "meaning": "Hobby", "kjønn": "en", "example_norsk": "Min hobby er å male.", "example": "My hobby is painting.", "fun_fact": "Many Norwegians participate in 'foreninger' (clubs).", "image_keyword": "art" },
+    { "word": "Innkjøp", "meaning": "Shopping / Purchase", "kjønn": "et", "example_norsk": "Jeg må gjøre ukens innkjøp.", "example": "I need to do the week's shopping.", "fun_fact": "Planning 'ukehandel' saves a lot of money.", "image_keyword": "cart" },
+    { "word": "Matlaging", "meaning": "Cooking", "kjønn": "en", "example_norsk": "Matlaging er en sosial aktivitet.", "example": "Cooking is a social activity.", "fun_fact": "Homemade 'taco fredag' is a national habit.", "image_keyword": "cooking" },
+    { "word": "Rengjøring", "meaning": "Cleaning", "kjønn": "en", "example_norsk": "Rengjøring tar mye tid.", "example": "Cleaning takes a lot of time.", "fun_fact": "Spring cleaning is called 'vårrengjøring'.", "image_keyword": "clean" },
+    { "word": "Klesvask", "meaning": "Laundry", "kjønn": "en", "example_norsk": "Det er mye klesvask i dag.", "example": "There is a lot of laundry today.", "fun_fact": "Hanging clothes outside is common in summer.", "image_keyword": "clothes" },
+    { "word": "Pendling", "meaning": "Commuting", "kjønn": "en", "example_norsk": "Pendling kan være slitsomt.", "example": "Commuting can be tiring.", "fun_fact": "Train and bus pendling is common near Oslo.", "image_keyword": "train" },
+    { "word": "Avtale", "meaning": "Appointment", "kjønn": "en", "example_norsk": "Jeg har en avtale hos frisøren.", "example": "I have an appointment at the hairdresser.", "fun_fact": "Must be cancelled 24h before to avoid fees.", "image_keyword": "hairdresser" },
+    { "word": "Trening", "meaning": "Training / Exercise", "kjønn": "en", "example_norsk": "Trening gir mer energi.", "example": "Exercise gives more energy.", "fun_fact": "Jogging and skiing are top activities.", "image_keyword": "gym" },
+    { "word": "Søvn", "meaning": "Sleep", "kjønn": "en", "example_norsk": "Søvn er viktig for helsen.", "example": "Sleep is important for health.", "fun_fact": "Suffix -n creates the noun from 'å sove'.", "image_keyword": "sleep" },
+    { "word": "Frokost", "meaning": "Breakfast", "kjønn": "en", "example_norsk": "Jeg spiser havregrøt til frokost.", "example": "I eat oatmeal for breakfast.", "fun_fact": "Usually includes 'brødskive med pålegg'.", "image_keyword": "breakfast" },
+    { "word": "Middag", "meaning": "Dinner", "kjønn": "en", "example_norsk": "Hva skal vi ha til middag?", "example": "What are we having for dinner?", "fun_fact": "Eaten earlier than in Southern Europe (4pm-6pm).", "image_keyword": "dinner" },
+    { "word": "Kveldsmat", "meaning": "Late evening meal", "kjønn": "en", "example_norsk": "Vi spiser kveldsmat klokken åtte.", "example": "We eat kveldsmat at eight.", "fun_fact": "A light meal before bed, unique to Norway.", "image_keyword": "bread-slice" },
+    { "word": "Sosialisering", "meaning": "Socializing", "kjønn": "en", "example_norsk": "Sosialisering er bra for trivselen.", "example": "Socializing is good for well-being.", "fun_fact": "Often happens in organized groups.", "image_keyword": "party" },
+    { "word": "Tidsklemma", "meaning": "The time squeeze", "kjønn": "en", "example_norsk": "Mange småbarnsforeldre føler tidsklemma.", "example": "Many parents feel the time squeeze.", "fun_fact": "A common Norwegian word for being too busy.", "image_keyword": "busy" },
+    { "word": "Stillhet", "meaning": "Silence / Quiet", "kjønn": "en", "example_norsk": "Jeg nyter stillheten i skogen.", "example": "I enjoy the silence in the forest.", "fun_fact": "Valued highly in Norwegian culture.", "image_keyword": "peace" },
+    { "word": "Hverdag", "meaning": "Weekday / Everyday life", "kjønn": "en", "example_norsk": "Hverdagen er full av gjøremål.", "example": "Everyday life is full of chores.", "fun_fact": "Opposite is 'helg' (weekend).", "image_keyword": "calendar" },
+    { "word": "Nattesøvn", "meaning": "Night's sleep", "kjønn": "en", "example_norsk": "God nattesøvn er nødvendig.", "example": "A good night's sleep is necessary.", "fun_fact": "Essential for mental health.", "image_keyword": "night" }
   ],
-  "In_The_Garden": [
-    {
-      "word": "Blomst",
-      "meaning": "Flower",
-      "example_norsk": "Blomsten lukter godt.",
-      "example": "The flower smells good.",
-      "fun_fact": "Heather (røsslyng) is the national flower of Norway.",
-      "image_keyword": "flower"
-    },
-    {
-      "word": "Tre",
-      "meaning": "Tree",
-      "example_norsk": "Treet har mange blader.",
-      "example": "The tree has many leaves.",
-      "fun_fact": "The 'Old Tjikko' spruce is one of the oldest trees in the world (found in Scandinavia).",
-      "image_keyword": "tree"
-    },
-    {
-      "word": "Gress",
-      "meaning": "Grass",
-      "example_norsk": "Gresset må klippes.",
-      "example": "The grass needs to be mowed.",
-      "fun_fact": "Some traditional Norwegian houses have grass growing on the roof (torvtak).",
-      "image_keyword": "green grass"
-    },
-    {
-      "word": "Hage",
-      "meaning": "Garden",
-      "example_norsk": "Vi sitter ute i hagen.",
-      "example": "We are sitting outside in the garden.",
-      "fun_fact": "Having a garden is a very common way for Norwegians to enjoy the summer.",
-      "image_keyword": "garden"
-    },
-    {
-      "word": "Stein",
-      "meaning": "Stone/Rock",
-      "example_norsk": "Det er en stor stein på stien.",
-      "example": "There is a large stone on the path.",
-      "fun_fact": "Norway's mountains are mostly made of ancient granite and gneiss.",
-      "image_keyword": "rock"
-    }
+  "Sosiale Forhold": [
+    { "word": "Forhold", "meaning": "Relationship", "kjønn": "et", "example_norsk": "De har et godt forhold.", "example": "They have a good relationship.", "fun_fact": "Can also mean 'circumstances'.", "image_keyword": "couple" },
+    { "word": "Venn", "meaning": "Friend", "kjønn": "en", "example_norsk": "Han er min beste venn.", "example": "He is my best friend.", "fun_fact": "Females are sometimes called 'venninne'.", "image_keyword": "friends" },
+    { "word": "Kollega", "meaning": "Colleague", "kjønn": "en", "example_norsk": "Jeg trives med mine kolleger.", "example": "I enjoy being with my colleagues.", "fun_fact": "Socializing with colleagues (lønningspils) is common.", "image_keyword": "colleagues" },
+    { "word": "Samtale", "meaning": "Conversation", "kjønn": "en", "example_norsk": "Vi hadde en dyp samtale.", "example": "We had a deep conversation.", "fun_fact": "Suffix -e often marks nouns from verbs.", "image_keyword": "talking" },
+    { "word": "Konflikt", "meaning": "Conflict", "kjønn": "en", "example_norsk": "Vi må løse denne konflikten.", "example": "We must resolve this conflict.", "fun_fact": "Norwegians are often conflict-averse (unngår konflikt).", "image_keyword": "argument" },
+    { "word": "Samhold", "meaning": "Unity / Togetherness", "kjønn": "et", "example_norsk": "Det er godt samhold i nabolaget.", "example": "There is good unity in the neighborhood.", "fun_fact": "Important during 'dugnad'.", "image_keyword": "unity" },
+    { "word": "Ensomhet", "meaning": "Loneliness", "kjønn": "en", "example_norsk": "Ensomhet er et samfunnsproblem.", "example": "Loneliness is a social problem.", "fun_fact": "Especially a focus for elderly care.", "image_keyword": "alone" },
+    { "word": "Slektskap", "meaning": "Kinship / Family relation", "kjønn": "et", "example_norsk": "De føler et sterkt slektskap.", "example": "They feel a strong kinship.", "fun_fact": "Suffix -skap shows the state of being.", "image_keyword": "ancestry" },
+    { "word": "Respekt", "meaning": "Respect", "kjønn": "en", "example_norsk": "Vis respekt for eldre.", "example": "Show respect for the elderly.", "fun_fact": "An international word used in Norway.", "image_keyword": "respect" },
+    { "word": "Gjestfrihet", "meaning": "Hospitality", "kjønn": "en", "example_norsk": "Vi ble møtt med stor gjestfrihet.", "example": "We were met with great hospitality.", "fun_fact": "Suffix -het is very common in B1 words.", "image_keyword": "welcome" },
+    { "word": "Tilhørighet", "meaning": "Sense of belonging", "kjønn": "en", "example_norsk": "Alle trenger en følelse av tilhørighet.", "example": "Everyone needs a sense of belonging.", "fun_fact": "Language is a big part of this.", "image_keyword": "home" },
+    { "word": "Selskap", "meaning": "Company / Party", "kjønn": "et", "example_norsk": "Takk for hyggelig selskap.", "example": "Thanks for the nice company.", "fun_fact": "Can also mean a business corporation.", "image_keyword": "party" },
+    { "word": "Utveksling", "meaning": "Exchange", "kjønn": "en", "example_norsk": "Utveksling av ideer er viktig.", "example": "Exchange of ideas is important.", "fun_fact": "Commonly used for student exchange.", "image_keyword": "exchange" },
+    { "word": "Samhandling", "meaning": "Interaction", "kjønn": "en", "example_norsk": "Digital samhandling er vanlig nå.", "example": "Digital interaction is common now.", "fun_fact": "Used in professional settings.", "image_keyword": "interaction" },
+    { "word": "Støtte", "meaning": "Support", "kjønn": "en", "example_norsk": "Jeg fikk mye støtte fra familien.", "example": "I received much support from my family.", "fun_fact": "Can be both emotional and financial.", "image_keyword": "support" },
+    { "word": "Trivsel", "meaning": "Well-being / Comfort", "kjønn": "en", "example_norsk": "Vi fokuserer på trivsel på jobben.", "example": "We focus on well-being at work.", "fun_fact": "Comes from the verb 'å trives'.", "image_keyword": "relax" },
+    { "word": "Omsorg", "meaning": "Care / Concern", "kjønn": "en", "example_norsk": "Barn trenger mye omsorg.", "example": "Children need a lot of care.", "fun_fact": "Related to 'helse og omsorg' (health and care).", "image_keyword": "care" },
+    { "word": "Forventning", "meaning": "Expectation", "kjønn": "en", "example_norsk": "Vi har høye forventninger til hverandre.", "example": "We have high expectations for each other.", "fun_fact": "Managing these is key to social success.", "image_keyword": "wait" },
+    { "word": "Krangling", "meaning": "Arguing", "kjønn": "en", "example_norsk": "Slutt med den kranglinga!", "example": "Stop that arguing!", "fun_fact": "Suffix -ing indicates the ongoing action.", "image_keyword": "angry" },
+    { "word": "Forsoning", "meaning": "Reconciliation", "kjønn": "en", "example_norsk": "De jobber for forsoning.", "example": "They are working for reconciliation.", "fun_fact": "A heavy B1 word for fixing relationships.", "image_keyword": "peace" }
   ],
-  "Shopping": [
-    {
-      "word": "Kvittering",
-      "meaning": "Receipt",
-      "example_norsk": "Vil du ha kvitteringen?",
-      "example": "Do you want the receipt?",
-      "fun_fact": "Most shops now offer digital receipts through banking apps.",
-      "image_keyword": "receipt"
-    },
-    {
-      "word": "Pris",
-      "meaning": "Price",
-      "example_norsk": "Hva er prisen på denne?",
-      "example": "What is the price of this one?",
-      "fun_fact": "Norway uses the 'krone' (NOK) as its currency.",
-      "image_keyword": "price tag"
-    },
-    {
-      "word": "Pose",
-      "meaning": "Bag (Plastic/Paper)",
-      "example_norsk": "Trenger du en pose?",
-      "example": "Do you need a bag?",
-      "fun_fact": "Plastic bags in Norway now cost a few kroner to encourage recycling.",
-      "image_keyword": "shopping bag"
-    },
-    {
-      "word": "Kjøpesenter",
-      "meaning": "Shopping Mall",
-      "example_norsk": "Senteret er åpent til klokken ni.",
-      "example": "The mall is open until nine o'clock.",
-      "fun_fact": "Norway has some of the highest mall density in Europe.",
-      "image_keyword": "shopping mall"
-    },
-    {
-      "word": "Salg",
-      "meaning": "Sale",
-      "example_norsk": "Det er salg i klesbutikken.",
-      "example": "There is a sale in the clothing store.",
-      "fun_fact": "January sales (januarsalg) are a major event in Norway.",
-      "image_keyword": "sale sign"
-    }
+  "Lov og Rett": [
+    { "word": "Lov", "meaning": "Law", "kjønn": "en", "example_norsk": "Man må følge landets lover.", "example": "One must follow the country's laws.", "fun_fact": "Norway's laws are collected in 'Norges Lover'.", "image_keyword": "law" },
+    { "word": "Rettferdighet", "meaning": "Justice", "kjønn": "en", "example_norsk": "Vi kjemper for rettferdighet.", "example": "We fight for justice.", "fun_fact": "Suffix -het is essential for abstract nouns.", "image_keyword": "justice" },
+    { "word": "Forbrytelse", "meaning": "Crime", "kjønn": "en", "example_norsk": "Politiet etterforsker en forbrytelse.", "example": "Police are investigating a crime.", "fun_fact": "Norway has a very low crime rate.", "image_keyword": "police" },
+    { "word": "Straff", "meaning": "Punishment", "kjønn": "en", "example_norsk": "Han fikk en streng straff.", "example": "He received a strict punishment.", "fun_fact": "Norway focuses on rehabilitation (rehabilitering).", "image_keyword": "prison" },
+    { "word": "Domstol", "meaning": "Court", "kjønn": "en", "example_norsk": "Saken skal opp i domstolen.", "example": "The case will be heard in court.", "fun_fact": "The highest court is 'Høyesterett'.", "image_keyword": "court" },
+    { "word": "Rettighet", "meaning": "Right", "kjønn": "en", "example_norsk": "Du har rettighet til advokat.", "example": "You have the right to a lawyer.", "fun_fact": "Human rights are 'menneskerettigheter'.", "image_keyword": "rights" },
+    { "word": "Plikt", "meaning": "Duty", "kjønn": "en", "example_norsk": "Vi har alle en plikt til å hjelpe.", "example": "We all have a duty to help.", "fun_fact": "Paired with 'Rettighet'.", "image_keyword": "duty" },
+    { "word": "Bevis", "meaning": "Evidence / Proof", "kjønn": "et", "example_norsk": "Politiet har klare bevis.", "example": "The police have clear evidence.", "fun_fact": "Can also be used for 'proof' in math.", "image_keyword": "evidence" },
+    { "word": "Vitne", "meaning": "Witness", "kjønn": "et", "example_norsk": "Vitnet forklarte seg i retten.", "example": "The witness testified in court.", "fun_fact": "Perjury is 'falsk forklaring'.", "image_keyword": "witness" },
+    { "word": "Advokat", "meaning": "Lawyer", "kjønn": "en", "example_norsk": "Jeg trenger å snakke med en advokat.", "example": "I need to talk to a lawyer.", "fun_fact": "Legal aid is 'fri rettshjelp'.", "image_keyword": "lawyer" },
+    { "word": "Anklage", "meaning": "Accusation", "kjønn": "en", "example_norsk": "Hun nekter for anklagene.", "example": "She denies the accusations.", "fun_fact": "Comes from the verb 'å anklage'.", "image_keyword": "point" },
+    { "word": "Bot", "meaning": "Fine", "kjønn": "en", "example_norsk": "Jeg fikk en bot for feilparkering.", "example": "I got a fine for illegal parking.", "fun_fact": "Fines can be 'forenklede forelegg'.", "image_keyword": "ticket" },
+    { "word": "Fengsel", "meaning": "Prison", "kjønn": "et", "example_norsk": "Han ble dømt til fengsel.", "example": "He was sentenced to prison.", "fun_fact": "Halden Prison is famous for its humanity.", "image_keyword": "bars" },
+    { "word": "Dom", "meaning": "Judgment / Sentence", "kjønn": "en", "example_norsk": "Dommen faller i morgen.", "example": "The judgment will be delivered tomorrow.", "fun_fact": "Can also mean 'opinion' in old usage.", "image_keyword": "gavel" },
+    { "word": "Sikkerhet", "meaning": "Security / Safety", "kjønn": "en", "example_norsk": "Nasjonal sikkerhet er viktig.", "example": "National security is important.", "fun_fact": "Handled by PST in Norway.", "image_keyword": "guard" },
+    { "word": "Erstatning", "meaning": "Compensation", "kjønn": "en", "example_norsk": "Han krever erstatning etter ulykken.", "example": "He is claiming compensation after the accident.", "fun_fact": "Common in insurance cases.", "image_keyword": "money" },
+    { "word": "Kontrakt", "meaning": "Contract", "kjønn": "en", "example_norsk": "Har du skrevet under på kontrakten?", "example": "Have you signed the contract?", "fun_fact": "Always keep a copy of your 'kontrakt'.", "image_keyword": "sign" },
+    { "word": "Tvister", "meaning": "Disputes", "kjønn": "en", "example_norsk": "De prøver å løse tvisten.", "example": "They are trying to resolve the dispute.", "fun_fact": "Settled in 'Forliksrådet' first.", "image_keyword": "dispute" },
+    { "word": "Beskyttelse", "meaning": "Protection", "kjønn": "en", "example_norsk": "Alle har rett på beskyttelse.", "example": "Everyone has the right to protection.", "fun_fact": "Related to the verb 'å beskytte'.", "image_keyword": "shield" },
+    { "word": "Politi", "meaning": "Police", "kjønn": "et", "example_norsk": "Politiet patruljerer i gatene.", "example": "The police are patrolling the streets.", "fun_fact": "Norwegian police are generally unarmed.", "image_keyword": "police" }
   ],
-  "Hygiene": [
-    {
-      "word": "Såpe",
-      "meaning": "Soap",
-      "example_norsk": "Vask hendene med såpe.",
-      "example": "Wash your hands with soap.",
-      "fun_fact": "Traditional Norwegian soap was often made from pine oil.",
-      "image_keyword": "soap"
-    },
-    {
-      "word": "Håndkle",
-      "meaning": "Towel",
-      "example_norsk": "Håndkleet er vått.",
-      "example": "The towel is wet.",
-      "fun_fact": "In Norway, towels are often dried on heated towel rails.",
-      "image_keyword": "towel"
-    },
-    {
-      "word": "Speil",
-      "meaning": "Mirror",
-      "example_norsk": "Jeg ser meg i speilet.",
-      "example": "I look at myself in the mirror.",
-      "fun_fact": "Round mirrors are currently very popular in Scandinavian interior design.",
-      "image_keyword": "mirror"
-    },
-    {
-      "word": "Kam",
-      "meaning": "Comb",
-      "example_norsk": "Jeg grer håret med en kam.",
-      "example": "I am combing my hair with a comb.",
-      "fun_fact": "Vikings were known for carrying beautifully carved combs made of bone.",
-      "image_keyword": "comb"
-    },
-    {
-      "word": "Toalettpapir",
-      "meaning": "Toilet Paper",
-      "example_norsk": "Vi er tomme for toalettpapir.",
-      "example": "We are out of toilet paper.",
-      "fun_fact": "Norway produces a large amount of its own recycled paper products.",
-      "image_keyword": "toilet paper"
-    }
+  "Mat og Kosthold": [
+    { "word": "Ingrediens", "meaning": "Ingredient", "kjønn": "en", "example_norsk": "Hvilke ingredienser trenger jeg?", "example": "What ingredients do I need?", "fun_fact": "Brown cheese (brunost) is a unique Norwegian ingredient.", "image_keyword": "ingredients" },
+    { "word": "Næring", "meaning": "Nutrition", "kjønn": "en", "example_norsk": "Kroppen trenger riktig næring.", "example": "The body needs proper nutrition.", "fun_fact": "Salmon is a major source of protein in Norway.", "image_keyword": "nutrition" },
+    { "word": "Måltid", "meaning": "Meal", "kjønn": "et", "example_norsk": "Frokost er dagens viktigste måltid.", "example": "Breakfast is the most important meal of the day.", "fun_fact": "Norwegians often eat a 'matpakke' for lunch.", "image_keyword": "meal" },
+    { "word": "Allergi", "meaning": "Allergy", "kjønn": "en", "example_norsk": "Har du noen allergier?", "example": "Do you have any allergies?", "fun_fact": "Gluten-free (glutenfri) options are everywhere in Norway.", "image_keyword": "allergy" },
+    { "word": "Oppskrift", "meaning": "Recipe", "kjønn": "en", "example_norsk": "Kan jeg få oppskriften på bollene?", "example": "Can I have the recipe for the buns?", "fun_fact": "Waffles are a staple of Norwegian hospitality.", "image_keyword": "recipe" },
+    { "word": "Økologisk", "meaning": "Organic", "kjønn": "adjektiv", "example_norsk": "Vi prøver å kjøpe økologisk mat.", "example": "We try to buy organic food.", "fun_fact": "Look for the green 'Ø' label in shops.", "image_keyword": "organic" },
+    { "word": "Smak", "meaning": "Taste / Flavor", "kjønn": "en", "example_norsk": "Sausen har en god smak.", "example": "The sauce has a good taste.", "fun_fact": "Norwegians love salty licorice (salt lakris).", "image_keyword": "tongue" },
+    { "word": "Mettet", "meaning": "Full / Satiated", "kjønn": "adjektiv", "example_norsk": "Jeg er mett og god.", "example": "I am full and satisfied.", "fun_fact": "Always say 'Takk for maten' after a meal.", "image_keyword": "satisfied" },
+    { "word": "Råvare", "meaning": "Raw material / Ingredient", "kjønn": "en", "example_norsk": "Norske råvarer er av høy kvalitet.", "example": "Norwegian raw ingredients are of high quality.", "fun_fact": "Fresh seafood is the pride of the coast.", "image_keyword": "raw-food" },
+    { "word": "Kjøkken", "meaning": "Kitchen / Cuisine", "kjønn": "et", "example_norsk": "Jeg liker det italienske kjøkkenet.", "example": "I like the Italian cuisine.", "fun_fact": "Modern Norwegian cuisine is called 'New Nordic'.", "image_keyword": "kitchen" }
   ],
-  "Ocean_Life": [
-    {
-      "word": "Laks",
-      "meaning": "Salmon",
-      "example_norsk": "Laksen svømmer i elva.",
-      "example": "The salmon is swimming in the river.",
-      "fun_fact": "Norway is the world's leading producer of Atlantic salmon.",
-      "image_keyword": "salmon"
-    },
-    {
-      "word": "Reke",
-      "meaning": "Shrimp/Prawn",
-      "example_norsk": "Vi spiser reker på brygga.",
-      "example": "We are eating shrimp on the pier.",
-      "fun_fact": "Fresh shrimp with white bread and lemon is a classic Norwegian summer meal.",
-      "image_keyword": "shrimp"
-    },
-    {
-      "word": "Hval",
-      "meaning": "Whale",
-      "example_norsk": "Vi så en hval i fjorden.",
-      "example": "We saw a whale in the fjord.",
-      "fun_fact": "Norway is one of the few countries that still practices traditional whaling.",
-      "image_keyword": "whale"
-    },
-    {
-      "word": "Krabbe",
-      "meaning": "Crab",
-      "example_norsk": "Krabben har hardt skall.",
-      "example": "The crab has a hard shell.",
-      "fun_fact": "The King Crab is an invasive but valuable species in Northern Norway.",
-      "image_keyword": "crab"
-    },
-    {
-      "word": "Sel",
-      "meaning": "Seal",
-      "example_norsk": "Selen ligger på isen.",
-      "example": "The seal is lying on the ice.",
-      "fun_fact": "The harbor seal is a common sight along the Norwegian coast.",
-      "image_keyword": "seal"
-    }
+  "Medier og Debatt": [
+    { "word": "Budskap", "meaning": "Message", "kjønn": "et", "example_norsk": "Hva er budskapet i denne artikkelen?", "example": "What is the message in this article?", "fun_fact": "Politicians focus heavily on clear 'budskap'.", "image_keyword": "letter" },
+    { "word": "Påstand", "meaning": "Claim / Assertion", "kjønn": "en", "example_norsk": "Det er en dristig påstand.", "example": "That is a bold claim.", "fun_fact": "Used frequently in debates (debatter).", "image_keyword": "point" },
+    { "word": "Kilde", "meaning": "Source", "kjønn": "en", "example_norsk": "Man må alltid sjekke kilden.", "example": "One must always check the source.", "fun_fact": "Kildekritikk (source criticism) is taught early in schools.", "image_keyword": "water-well" },
+    { "word": "Ytring", "meaning": "Utterance / Expression", "kjønn": "en", "example_norsk": "Hatefulle ytringer er ulovlige.", "example": "Hate speech is illegal.", "fun_fact": "Linked to 'Ytringsfrihet' (Freedom of speech).", "image_keyword": "shout" },
+    { "word": "Påvirkning", "meaning": "Influence", "kjønn": "en", "example_norsk": "Sosiale medier har stor påvirkning.", "example": "Social media has a big influence.", "fun_fact": "An 'influenser' is the same word in Norwegian.", "image_keyword": "magnet" },
+    { "word": "Redaktør", "meaning": "Editor", "kjønn": "en", "example_norsk": "Redaktøren bestemmer innholdet.", "example": "The editor decides the content.", "fun_fact": "NRK is the state-owned media giant.", "image_keyword": "editor" },
+    { "word": "Annonse", "meaning": "Advertisement", "kjønn": "en", "example_norsk": "Jeg så en annonse for jobben.", "example": "I saw an ad for the job.", "fun_fact": "Finn.no is the main site for all Norwegian ads.", "image_keyword": "billboard" },
+    { "word": "Troverdighet", "meaning": "Credibility", "kjønn": "en", "example_norsk": "Han har mistet sin troverdighet.", "example": "He has lost his credibility.", "fun_fact": "High trust in media is a Nordic trait.", "image_keyword": "check" },
+    { "word": "Offentlighet", "meaning": "The public / Publicity", "kjønn": "en", "example_norsk": "Saken ble kjent i offentligheten.", "example": "The case became known to the public.", "fun_fact": "Norway has very transparent public records.", "image_keyword": "people" },
+    { "word": "Debatt", "meaning": "Debate", "kjønn": "en", "example_norsk": "Det er en heftig debatt om klima.", "example": "There is a heated debate about climate.", "fun_fact": "Litteraturhuset in Oslo is a hub for debates.", "image_keyword": "microphone" }
   ],
-  "Materials": [
-    {
-      "word": "Treverk",
-      "meaning": "Wood (material)",
-      "example_norsk": "Huset er bygget av treverk.",
-      "example": "The house is built of wood.",
-      "fun_fact": "Norway has a long tradition of expert woodworking and carpentry.",
-      "image_keyword": "wood texture"
-    },
-    {
-      "word": "Metall",
-      "meaning": "Metal",
-      "example_norsk": "Nøkkelen er laget av metall.",
-      "example": "The key is made of metal.",
-      "fun_fact": "Hydro is a major Norwegian company that produces aluminum.",
-      "image_keyword": "metal sheet"
-    },
-    {
-      "word": "Plast",
-      "meaning": "Plastic",
-      "example_norsk": "Flasken er laget av plast.",
-      "example": "The bottle is made of plastic.",
-      "fun_fact": "Norway has a very high recycling rate for plastic bottles (the 'Pant' system).",
-      "image_keyword": "plastic bottle"
-    },
-    {
-      "word": "Ull",
-      "meaning": "Wool",
-      "example_norsk": "Ull holder deg varm om vinteren.",
-      "example": "Wool keeps you warm in the winter.",
-      "fun_fact": "Norwegian wool is famous for being durable and warm.",
-      "image_keyword": "wool yarn"
-    },
-    {
-      "word": "Glass",
-      "meaning": "Glass (material)",
-      "example_norsk": "Vinduet er laget av glass.",
-      "example": "The window is made of glass.",
-      "fun_fact": "Double or triple glazing is standard in Norway to keep the heat in.",
-      "image_keyword": "glass shard"
-    }
+  "Arbeidslivskultur": [
+    { "word": "Egenmelding", "meaning": "Self-certified sick leave", "kjønn": "en", "example_norsk": "Jeg må bruke en egenmelding i dag.", "example": "I have to use a self-certification today.", "fun_fact": "You can be sick for 3 days without a doctor's note.", "image_keyword": "bed" },
+    { "word": "Arbeidsmiljø", "meaning": "Work environment", "kjønn": "et", "example_norsk": "Vi har et inkluderende arbeidsmiljø.", "example": "We have an inclusive work environment.", "fun_fact": "The 'Arbeidsmiljøloven' is a very strict law protecting workers.", "image_keyword": "office-plants" },
+    { "word": "Fagforening", "meaning": "Trade union", "kjønn": "en", "example_norsk": "Mange er medlem i en fagforening.", "example": "Many are members of a trade union.", "fun_fact": "Unions negotiate your salary (lønnsoppgjør).", "image_keyword": "unity" },
+    { "word": "Trivsel", "meaning": "Well-being", "kjønn": "en", "example_norsk": "Trivsel på jobben er avgjørende.", "example": "Well-being at work is crucial.", "fun_fact": "Norwegian bosses focus heavily on 'trivsel'.", "image_keyword": "smile" },
+    { "word": "Fleksitid", "meaning": "Flexible hours", "kjønn": "en", "example_norsk": "Vi har fleksitid i sommerhalvåret.", "example": "We have flexi-time during the summer months.", "fun_fact": "Allows for better 'work-life balance'.", "image_keyword": "clock-fast" },
+    { "word": "Hierarki", "meaning": "Hierarchy", "kjønn": "et", "example_norsk": "Norske bedrifter har flatt hierarki.", "example": "Norwegian companies have a flat hierarchy.", "fun_fact": "You often call your boss by their first name.", "image_keyword": "pyramid" },
+    { "word": "Permittering", "meaning": "Temporary layoff", "kjønn": "en", "example_norsk": "De ansatte fikk varsel om permittering.", "example": "The employees received notice of temporary layoff.", "fun_fact": "Different from 'oppsigelse' (firing) as you might return.", "image_keyword": "pause" },
+    { "word": "Kompetanse", "meaning": "Competence", "kjønn": "en", "example_norsk": "Vi trenger mer digital kompetanse.", "example": "We need more digital competence.", "fun_fact": "Lifelong learning is encouraged in Norway.", "image_keyword": "brain" },
+    { "word": "Samarbeid", "meaning": "Collaboration", "kjønn": "et", "example_norsk": "Samarbeid er nøkkelen til suksess.", "example": "Collaboration is the key to success.", "fun_fact": "The 'Nordic Model' relies on collaboration.", "image_keyword": "puzzle" },
+    { "word": "Lærling", "meaning": "Apprentice", "kjønn": "en", "example_norsk": "Han startet som lærling i fjor.", "example": "He started as an apprentice last year.", "fun_fact": "A mix of school and practical work.", "image_keyword": "mechanic" }
   ],
-  "Emergency": [
-    {
-      "word": "Politi",
-      "meaning": "Police",
-      "example_norsk": "Ring politiet!",
-      "example": "Call the police!",
-      "fun_fact": "Most Norwegian police officers do not carry firearms on their person daily.",
-      "image_keyword": "police car"
-    },
-    {
-      "word": "Ambulanse",
-      "meaning": "Ambulance",
-      "example_norsk": "Ambulansen kom raskt.",
-      "example": "The ambulance came quickly.",
-      "fun_fact": "The emergency number for medical help in Norway is 113.",
-      "image_keyword": "ambulance"
-    },
-    {
-      "word": "Brannbil",
-      "meaning": "Fire truck",
-      "example_norsk": "Brannbilen kjører med sirener.",
-      "example": "The fire truck is driving with sirens.",
-      "fun_fact": "The emergency number for fire in Norway is 110.",
-      "image_keyword": "fire truck"
-    },
-    {
-      "word": "Hjelp",
-      "meaning": "Help",
-      "example_norsk": "Jeg trenger hjelp.",
-      "example": "I need help.",
-      "fun_fact": "The word 'dugnad' is a unique Norwegian word for helping each other.",
-      "image_keyword": "help sign"
-    },
-    {
-      "word": "Brann",
-      "meaning": "Fire",
-      "example_norsk": "Det brenner i skogen.",
-      "example": "There is a fire in the forest.",
-      "fun_fact": "Many historic Norwegian towns were destroyed by fire due to wooden buildings.",
-      "image_keyword": "fire"
-    }
+  "Abstrakte Begreper": [
+    { "word": "Virkelighet", "meaning": "Reality", "kjønn": "en", "example_norsk": "Virkeligheten er ofte komplisert.", "example": "Reality is often complicated.", "fun_fact": "Derived from 'virkelig' (real).", "image_keyword": "world" },
+    { "word": "Forventning", "meaning": "Expectation", "kjønn": "en", "example_norsk": "Vi må dempe forventningene våre.", "example": "We must lower our expectations.", "fun_fact": "High expectations can lead to 'skuffelse'.", "image_keyword": "waiting" },
+    { "word": "Mulighet", "meaning": "Opportunity / Possibility", "kjønn": "en", "example_norsk": "Norge gir mange muligheter.", "example": "Norway provides many opportunities.", "fun_fact": "Suffix -het is the Norwegian equivalent of -ness or -ity.", "image_keyword": "open-door" },
+    { "word": "Utvikling", "meaning": "Development", "kjønn": "en", "example_norsk": "Teknologien er i stadig utvikling.", "example": "Technology is in constant development.", "fun_fact": "Used for personal growth and national progress.", "image_keyword": "growth" },
+    { "word": "Begrensning", "meaning": "Limitation", "kjønn": "en", "example_norsk": "Vi må kjenne våre begrensninger.", "example": "We must know our limitations.", "fun_fact": "Opposite of 'mulighet'.", "image_keyword": "fence" },
+    { "word": "Forutsetning", "meaning": "Prerequisite / Condition", "kjønn": "en", "example_norsk": "Språk er en forutsetning for jobb.", "example": "Language is a prerequisite for a job.", "fun_fact": "A very common B1/B2 academic word.", "image_keyword": "key" },
+    { "word": "Betydning", "meaning": "Significance / Meaning", "kjønn": "en", "example_norsk": "Dette har stor betydning for oss.", "example": "This has great significance for us.", "fun_fact": "Related to 'å bety' (to mean).", "image_keyword": "star" },
+    { "word": "Konsekvens", "meaning": "Consequence", "kjønn": "en", "example_norsk": "Valgene våre har konsekvenser.", "example": "Our choices have consequences.", "fun_fact": "Can be both negative and positive.", "image_keyword": "domino" },
+    { "word": "Mangfold", "meaning": "Diversity", "kjønn": "et", "example_norsk": "Mangfold beriker samfunnet.", "example": "Diversity enriches society.", "fun_fact": "Includes culture, gender, and ideas.", "image_keyword": "colors" },
+    { "word": "Rettferdighet", "meaning": "Justice / Fairness", "kjønn": "en", "example_norsk": "Alle ønsker rettferdighet.", "example": "Everyone wants justice.", "fun_fact": "A cornerstone of the legal system.", "image_keyword": "scales" }
   ],
-  "Technology": [
-    {
-      "word": "Internett",
-      "meaning": "Internet",
-      "example_norsk": "Internettet er nede.",
-      "example": "The internet is down.",
-      "fun_fact": "Norway was the first non-English speaking country to connect to the internet (ARPANET).",
-      "image_keyword": "wifi router"
-    },
-    {
-      "word": "Skjerm",
-      "meaning": "Screen",
-      "example_norsk": "Skjermen er knust.",
-      "example": "The screen is broken.",
-      "fun_fact": "Norwegians spend an average of 4-6 hours on screens per day.",
-      "image_keyword": "computer screen"
-    },
-    {
-      "word": "Passord",
-      "meaning": "Password",
-      "example_norsk": "Hva er passordet til wifi?",
-      "example": "What is the wifi password?",
-      "fun_fact": "BankID is a secure password system used by almost everyone in Norway.",
-      "image_keyword": "lock icon"
-    },
-    {
-      "word": "E-post",
-      "meaning": "Email",
-      "example_norsk": "Jeg sendte deg en e-post.",
-      "example": "I sent you an email.",
-      "fun_fact": "Email is still the most common way to communicate formally in Norway.",
-      "image_keyword": "email icon"
-    },
-    {
-      "word": "Lader",
-      "meaning": "Charger",
-      "example_norsk": "Har du en lader til telefonen?",
-      "example": "Do you have a charger for the phone?",
-      "fun_fact": "Universal USB-C chargers are now the standard in Norway.",
-      "image_keyword": "phone charger"
-    }
+  "Forskning og Vitenskap": [
+    { "word": "Forskning", "meaning": "Research", "kjønn": "en", "example_norsk": "Han driver med medisinsk forskning.", "example": "He does medical research.", "fun_fact": "Universities are the main hubs for 'forskning'.", "image_keyword": "microscope" },
+    { "word": "Vitenskap", "meaning": "Science", "kjønn": "en", "example_norsk": "Vitenskapen gir oss svar.", "example": "Science gives us answers.", "fun_fact": "Suffix -skap denotes a branch of knowledge.", "image_keyword": "lab" },
+    { "word": "Oppdagelse", "meaning": "Discovery", "kjønn": "en", "example_norsk": "Det var en revolusjonerende oppdagelse.", "example": "It was a revolutionary discovery.", "fun_fact": "Roald Amundsen made many discoveries in the Arctic.", "image_keyword": "telescope" },
+    { "word": "Eksperiment", "meaning": "Experiment", "kjønn": "et", "example_norsk": "Vi utførte et kjemisk eksperiment.", "example": "We performed a chemical experiment.", "fun_fact": "Always starts with a 'hypotese'.", "image_keyword": "beaker" },
+    { "word": "Resultat", "meaning": "Result", "kjønn": "et", "example_norsk": "Resultatene var overraskende.", "example": "The results were surprising.", "fun_fact": "Used in science, sports, and business.", "image_keyword": "chart" },
+    { "word": "Teori", "meaning": "Theory", "kjønn": "en", "example_norsk": "I teorien er dette enkelt.", "example": "In theory, this is easy.", "fun_fact": "Opposite of 'praksis'.", "image_keyword": "blackboard" },
+    { "word": "Data", "meaning": "Data", "kjønn": "flertall", "example_norsk": "Vi må analysere innsamlet data.", "example": "We must analyze collected data.", "fun_fact": "Data is the new oil (data er den nye oljen).", "image_keyword": "computer" },
+    { "word": "Analyse", "meaning": "Analysis", "kjønn": "en", "example_norsk": "Analysen viser en klar trend.", "example": "The analysis shows a clear trend.", "fun_fact": "Comes from the verb 'å analysere'.", "image_keyword": "magnifying-glass" },
+    { "word": "Miljø", "meaning": "Environment", "kjønn": "et", "example_norsk": "Forskning på miljøet er viktig.", "example": "Research on the environment is important.", "fun_fact": "Norway is a leader in polar research.", "image_keyword": "leaf" },
+    { "word": "Metode", "meaning": "Method", "kjønn": "en", "example_norsk": "Vi må bruke en vitenskapelig metode.", "example": "We must use a scientific method.", "fun_fact": "Consistency is key in methodology.", "image_keyword": "steps" }
   ],
-  "Weather_Extra": [
-    {
-      "word": "Tåke",
-      "meaning": "Fog",
-      "example_norsk": "Jeg kan ikke se veien på grunn av tåke.",
-      "example": "I cannot see the road because of fog.",
-      "fun_fact": "Fog is very common in the fjords during autumn.",
-      "image_keyword": "foggy forest"
-    },
-    {
-      "word": "Lyn",
-      "meaning": "Lightning",
-      "example_norsk": "Lynet slo ned i treet.",
-      "example": "The lightning struck the tree.",
-      "fun_fact": "Thunderstorms are less frequent in Norway than in southern Europe.",
-      "image_keyword": "lightning"
-    },
-    {
-      "word": "Storm",
-      "meaning": "Storm",
-      "example_norsk": "Det er meldt storm på kysten.",
-      "example": "A storm is predicted on the coast.",
-      "fun_fact": "Norwegians use the app 'Yr' to check for storms.",
-      "image_keyword": "stormy sea"
-    },
-    {
-      "word": "Vær",
-      "meaning": "Weather",
-      "example_norsk": "Hvordan er været i dag?",
-      "example": "How is the weather today?",
-      "fun_fact": "Talking about the weather is the #1 icebreaker in Norway.",
-      "image_keyword": "clouds"
-    },
-    {
-      "word": "Kulde",
-      "meaning": "Cold (The noun)",
-      "example_norsk": "Jeg hater denne kulden.",
-      "example": "I hate this cold.",
-      "fun_fact": "Dry cold is often felt as more comfortable than wet cold.",
-      "image_keyword": "frost"
-    }
-  ],
-  "Sports": [
-    {
-      "word": "Fotball",
-      "meaning": "Football/Soccer",
-      "example_norsk": "Skal vi spille fotball?",
-      "example": "Shall we play football?",
-      "fun_fact": "Norway's Erling Haaland is one of the best players in the world.",
-      "image_keyword": "soccer ball"
-    },
-    {
-      "word": "Håndball",
-      "meaning": "Handball",
-      "example_norsk": "Norge er gode i håndball.",
-      "example": "Norway is good at handball.",
-      "fun_fact": "The Norwegian women's handball team is world-famous.",
-      "image_keyword": "handball"
-    },
-    {
-      "word": "Skøyter",
-      "meaning": "Skates",
-      "example_norsk": "Vi går på skøyter på vannet.",
-      "example": "We are skating on the lake.",
-      "fun_fact": "Speed skating is a historic national sport in Norway.",
-      "image_keyword": "ice skates"
-    },
-    {
-      "word": "Mål",
-      "meaning": "Goal",
-      "example_norsk": "Han scoret et fantastisk mål.",
-      "example": "He scored a fantastic goal.",
-      "fun_fact": "The word 'mål' also means 'measurement' or 'language'.",
-      "image_keyword": "goal net"
-    },
-    {
-      "word": "Lag",
-      "meaning": "Team",
-      "example_norsk": "Vi er et godt lag.",
-      "example": "We are a good team.",
-      "fun_fact": "Community spirit in sports is very strong in Norway.",
-      "image_keyword": "team huddle"
-    }
-  ],
-  "Music_Instruments": [
-    {
-      "word": "Gitar",
-      "meaning": "Guitar",
-      "example_norsk": "Han spiller gitar ved bålet.",
-      "example": "He plays the guitar by the campfire.",
-      "fun_fact": "The guitar is the most popular instrument for beginners in Norway.",
-      "image_keyword": "guitar"
-    },
-    {
-      "word": "Piano",
-      "meaning": "Piano",
-      "example_norsk": "Hun spiller vakkert på piano.",
-      "example": "She plays beautifully on the piano.",
-      "fun_fact": "Edvard Grieg's piano concerto is world-renowned.",
-      "image_keyword": "piano keys"
-    },
-    {
-      "word": "Tromme",
-      "meaning": "Drum",
-      "example_norsk": "Ikke slå så hardt på tromma.",
-      "example": "Don't hit the drum so hard.",
-      "fun_fact": "Drums have been used in Sami culture for centuries.",
-      "image_keyword": "drums"
-    },
-    {
-      "word": "Fiolin",
-      "meaning": "Violin",
-      "example_norsk": "Hardingfele er en norsk fiolin.",
-      "example": "Hardingfele is a Norwegian violin.",
-      "fun_fact": "The Hardanger Fiddle has 8 or 9 strings instead of 4.",
-      "image_keyword": "violin"
-    },
-    {
-      "word": "Fløyte",
-      "meaning": "Flute",
-      "example_norsk": "Fløyten har en lys lyd.",
-      "example": "The flute has a bright sound.",
-      "fun_fact": "Willow flutes (seljefløyte) are traditional Norwegian folk instruments.",
-      "image_keyword": "flute"
-    }
-  ],
-  "Buildings_Parts": [
-    {
-      "word": "Tak",
-      "meaning": "Roof/Ceiling",
-      "example_norsk": "Lampa henger i taket.",
-      "example": "The lamp hangs from the ceiling.",
-      "fun_fact": "Norwegian roofs are built to withstand heavy snow loads.",
-      "image_keyword": "roof"
-    },
-    {
-      "word": "Gulv",
-      "meaning": "Floor",
-      "example_norsk": "Jeg vasker gulvet.",
-      "example": "I am washing the floor.",
-      "fun_fact": "Heated floors (varmekabler) are a standard luxury in Norway.",
-      "image_keyword": "wood floor"
-    },
-    {
-      "word": "Vegg",
-      "meaning": "Wall",
-      "example_norsk": "Bildet henger på veggen.",
-      "example": "The picture is hanging on the wall.",
-      "fun_fact": "Wooden paneling (panel) is very common on Norwegian walls.",
-      "image_keyword": "wall"
-    },
-    {
-      "word": "Trapp",
-      "meaning": "Stairs",
-      "example_norsk": "Gå opp trappen til andre etasje.",
-      "example": "Go up the stairs to the second floor.",
-      "fun_fact": "Norway has the world's longest wooden staircase in Flørli (4444 steps).",
-      "image_keyword": "stairs"
-    },
-    {
-      "word": "Kjeller",
-      "meaning": "Basement",
-      "example_norsk": "Det er mørkt i kjelleren.",
-      "example": "It is dark in the basement.",
-      "fun_fact": "Basements are often used as 'hobbyrom' (hobby rooms) in Norway.",
-      "image_keyword": "basement"
-    }
-  ],
-  "Nature_Objects": [
-    {
-      "word": "Blad",
-      "meaning": "Leaf",
-      "example_norsk": "Bladene faller av trærne.",
-      "example": "The leaves are falling off the trees.",
-      "fun_fact": "The colors of the leaves in the mountains (høstfarger) are stunning.",
-      "image_keyword": "autumn leaf"
-    },
-    {
-      "word": "Gren",
-      "meaning": "Branch",
-      "example_norsk": "Fuglen sitter på en gren.",
-      "example": "The bird is sitting on a branch.",
-      "fun_fact": "Spruce branches were traditionally used as doormats.",
-      "image_keyword": "tree branch"
-    },
-    {
-      "word": "Sand",
-      "meaning": "Sand",
-      "example_norsk": "Barna leker i sanden.",
-      "example": "The children are playing in the sand.",
-      "fun_fact": "Norway has several 'arctic beaches' with coral-white sand.",
-      "image_keyword": "sand"
-    },
-    {
-      "word": "Gjørme",
-      "meaning": "Mud",
-      "example_norsk": "Stien er full av gjørme.",
-      "example": "The path is full of mud.",
-      "fun_fact": "Springtime in Norway is often called 'gjørmetid' (mud time).",
-      "image_keyword": "mud"
-    },
-    {
-      "word": "Is",
-      "meaning": "Ice",
-      "example_norsk": "Pass deg, det er glatt på isen.",
-      "example": "Watch out, it's slippery on the ice.",
-      "fun_fact": "Glaciers in Norway are thousands of years old.",
-      "image_keyword": "ice"
-    }
-  ],
-  "Feelings_Extra": [
-    {
-      "word": "Sint",
-      "meaning": "Angry",
-      "example_norsk": "Ikke vær sint på meg.",
-      "example": "Don't be angry with me.",
-      "fun_fact": "Norwegians value politeness and rarely show anger in public.",
-      "image_keyword": "angry"
-    },
-    {
-      "word": "Redd",
-      "meaning": "Scared/Afraid",
-      "example_norsk": "Jeg er redd for edderkopper.",
-      "example": "I am afraid of spiders.",
-      "fun_fact": "There are very few dangerous animals in the Norwegian wild.",
-      "image_keyword": "scared"
-    },
-    {
-      "word": "Overrasket",
-      "meaning": "Surprised",
-      "example_norsk": "Jeg ble veldig overrasket!",
-      "example": "I was very surprised!",
-      "fun_fact": "Surprise parties are called 'overraskelsesfest'.",
-      "image_keyword": "surprised"
-    },
-    {
-      "word": "Stolt",
-      "meaning": "Proud",
-      "example_norsk": "Jeg er stolt av deg.",
-      "example": "I am proud of you.",
-      "fun_fact": "Norwegians are very proud of their local dialects.",
-      "image_keyword": "proud"
-    },
-    {
-      "word": "Trist",
-      "meaning": "Sad",
-      "example_norsk": "Det var en trist film.",
-      "example": "It was a sad movie.",
-      "fun_fact": "The word 'stusselig' is a unique way to describe something slightly sad or pathetic.",
-      "image_keyword": "sad face"
-    }
-  ],
-  "Bedroom": [
-    {
-      "word": "Dyne",
-      "meaning": "Duvet/Quilt",
-      "example_norsk": "Dyna er god og varm.",
-      "example": "The duvet is good and warm.",
-      "fun_fact": "Norwegians use down-filled duvets even in the summer.",
-      "image_keyword": "duvet"
-    },
-    {
-      "word": "Pute",
-      "meaning": "Pillow",
-      "example_norsk": "Jeg trenger en myk pute.",
-      "example": "I need a soft pillow.",
-      "fun_fact": "Pillow fights are called 'putekrig' in Norwegian.",
-      "image_keyword": "pillow"
-    },
-    {
-      "word": "Vekkerklokke",
-      "meaning": "Alarm clock",
-      "example_norsk": "Vekkerklokka ringer klokken syv.",
-      "example": "The alarm clock rings at seven o'clock.",
-      "fun_fact": "Most Norwegians now use their smartphones as alarm clocks.",
-      "image_keyword": "alarm clock"
-    },
-    {
-      "word": "Skap",
-      "meaning": "Closet/Cupboard",
-      "example_norsk": "Klærne henger i skapet.",
-      "example": "The clothes are hanging in the closet.",
-      "fun_fact": "Built-in closets are standard in most Norwegian bedrooms.",
-      "image_keyword": "closet"
-    },
-    {
-      "word": "Nattbord",
-      "meaning": "Nightstand",
-      "example_norsk": "Boken ligger på nattbordet.",
-      "example": "The book is on the nightstand.",
-      "fun_fact": "A nightstand is literally a 'night table' in Norwegian.",
-      "image_keyword": "nightstand"
-    }
-  ],
-  "Sky_Space": [
-    {
-      "word": "Måne",
-      "meaning": "Moon",
-      "example_norsk": "Månen lyser opp natten.",
-      "example": "The moon lights up the night.",
-      "fun_fact": "The full moon over the snowy mountains is a popular photo motif.",
-      "image_keyword": "moon"
-    },
-    {
-      "word": "Stjerne",
-      "meaning": "Star",
-      "example_norsk": "Se på alle stjernene!",
-      "example": "Look at all the stars!",
-      "fun_fact": "Because there is little light pollution, stars are very visible in rural Norway.",
-      "image_keyword": "stars"
-    },
-    {
-      "word": "Sky",
-      "meaning": "Cloud",
-      "example_norsk": "Det er ikke en sky på himmelen.",
-      "example": "There isn't a cloud in the sky.",
-      "fun_fact": "The Norwegian word for 'cloud' is the same as the word for 'sky' in English (context matters!).",
-      "image_keyword": "clouds"
-    },
-    {
-      "word": "Himmel",
-      "meaning": "Sky/Heaven",
-      "example_norsk": "Himmelen er rosa i kveld.",
-      "example": "The sky is pink tonight.",
-      "fun_fact": "The Northern Lights (Nordlys) appear high in the Norwegian sky.",
-      "image_keyword": "sunset sky"
-    },
-    {
-      "word": "Planet",
-      "meaning": "Planet",
-      "example_norsk": "Mars er en rød planet.",
-      "example": "Mars is a red planet.",
-      "fun_fact": "Norway has a space center on the island of Andøya.",
-      "image_keyword": "planets"
-    }
-  ],
-  "Beach_Holiday": [
-    {
-      "word": "Badeball",
-      "meaning": "Beach ball",
-      "example_norsk": "Vi leker med en badeball.",
-      "example": "We are playing with a beach ball.",
-      "fun_fact": "Beach balls are a staple of Norwegian summer vacations.",
-      "image_keyword": "beach ball"
-    },
-    {
-      "word": "Solkrem",
-      "meaning": "Sunscreen",
-      "example_norsk": "Husk å bruke solkrem!",
-      "example": "Remember to use sunscreen!",
-      "fun_fact": "Even in the mountains, the sun can be very strong due to snow reflection.",
-      "image_keyword": "sunscreen"
-    },
-    {
-      "word": "Håndkle",
-      "meaning": "Towel",
-      "example_norsk": "Legg håndkleet på sanden.",
-      "example": "Lay the towel on the sand.",
-      "fun_fact": "Microfiber towels are becoming popular for hikers.",
-      "image_keyword": "beach towel"
-    },
-    {
-      "word": "Skjell",
-      "meaning": "Shell",
-      "example_norsk": "Jeg fant et fint skjell.",
-      "example": "I found a nice shell.",
-      "fun_fact": "Norwegian children often collect blue mussel shells (blåskjell).",
-      "image_keyword": "seashell"
-    },
-    {
-      "word": "Bølger",
-      "meaning": "Waves",
-      "example_norsk": "Bølgene er store i dag.",
-      "example": "The waves are big today.",
-      "fun_fact": "Stad is the most wave-heavy place in Norway, popular for surfing.",
-      "image_keyword": "ocean waves"
-    }
-  ],
-  "Winter_Clothing": [
-    {
-      "word": "Votter",
-      "meaning": "Mittens",
-      "example_norsk": "Ullvotter er best i kulda.",
-      "example": "Wool mittens are best in the cold.",
-      "fun_fact": "Selbuvotter are the most famous patterned mittens from Norway.",
-      "image_keyword": "mittens"
-    },
-    {
-      "word": "Skjerf",
-      "meaning": "Scarf",
-      "example_norsk": "Surr skjerfet rundt halsen.",
-      "example": "Wrap the scarf around your neck.",
-      "fun_fact": "Long, thick wool scarves are a fashion staple in Oslo.",
-      "image_keyword": "scarf"
-    },
-    {
-      "word": "Kåpe",
-      "meaning": "Coat",
-      "example_norsk": "Hun har på seg en fin kåpe.",
-      "example": "She is wearing a nice coat.",
-      "fun_fact": "The word 'kåpe' usually refers to a dressier, long coat.",
-      "image_keyword": "winter coat"
-    },
-    {
-      "word": "Støvler",
-      "meaning": "Boots",
-      "example_norsk": "Jeg trenger vanntette støvler.",
-      "example": "I need waterproof boots.",
-      "fun_fact": "Rubber boots (gummistøvler) are essential for rainy days.",
-      "image_keyword": "rubber boots"
-    },
-    {
-      "word": "Termos",
-      "meaning": "Thermos",
-      "example_norsk": "Vi har kakao på termosen.",
-      "example": "We have cocoa in the thermos.",
-      "fun_fact": "No Norwegian 'skitur' (ski trip) is complete without a thermos.",
-      "image_keyword": "thermos"
-    }
+  "Følelser og Mental Helse": [
+    { "word": "Selvfølelse", "meaning": "Self-esteem", "kjønn": "en", "example_norsk": "God selvfølelse er viktig for barn.", "example": "Good self-esteem is important for children.", "fun_fact": "Different from 'selvtillit' (self-confidence).", "image_keyword": "mirror" },
+    { "word": "Mestring", "meaning": "Coping / Mastery", "kjønn": "en", "example_norsk": "Jeg føler mestring når jeg snakker norsk.", "example": "I feel a sense of mastery when I speak Norwegian.", "fun_fact": "A key term in Norwegian psychology.", "image_keyword": "climbing" },
+    { "word": "Stress", "meaning": "Stress", "kjønn": "et", "example_norsk": "For mye stress er usunt.", "example": "Too much stress is unhealthy.", "fun_fact": "Nature is the Norwegian cure for stress.", "image_keyword": "headache" },
+    { "word": "Angst", "meaning": "Anxiety", "kjønn": "en", "example_norsk": "Han sliter med sosial angst.", "example": "He struggles with social anxiety.", "fun_fact": "Edvard Munch's 'The Scream' depicts anxiety.", "image_keyword": "scream" },
+    { "word": "Depresjon", "meaning": "Depression", "kjønn": "en", "example_norsk": "Mørketiden kan føre til depresjon.", "example": "The polar night can lead to depression.", "fun_fact": "D-vitamin supplements are common in winter.", "image_keyword": "rain-cloud" },
+    { "word": "Glede", "meaning": "Joy", "kjønn": "en", "example_norsk": "Det gir meg stor glede å reise.", "example": "It gives me great joy to travel.", "fun_fact": "Used in 'Gledelig jul' (Merry Christmas).", "image_keyword": "happy" },
+    { "word": "Ensomhet", "meaning": "Loneliness", "kjønn": "en", "example_norsk": "Ensomhet kan ramme alle.", "example": "Loneliness can affect anyone.", "fun_fact": "Being 'alene' (alone) is not the same as being 'ensom'.", "image_keyword": "lonely" },
+    { "word": "Sorg", "meaning": "Grief", "kjønn": "en", "example_norsk": "Sorg tar tid å bearbeide.", "example": "Grief takes time to process.", "fun_fact": "Commonly expressed at funerals (begravelser).", "image_keyword": "candle" },
+    { "word": "Sinne", "meaning": "Anger", "kjønn": "et", "example_norsk": "Det er lov å føle sinne.", "example": "It is allowed to feel anger.", "fun_fact": "Related to the adjective 'sint'.", "image_keyword": "fire" },
+    { "word": "Lykke", "meaning": "Happiness / Luck", "kjønn": "en", "example_norsk": "Lykke kommer innenfra.", "example": "Happiness comes from within.", "fun_fact": "Norway is often in the 'Top 3' happiest countries.", "image_keyword": "sun" }
   ]
 }
