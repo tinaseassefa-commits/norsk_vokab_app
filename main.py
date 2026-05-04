@@ -1,6 +1,7 @@
 import json
 import random
 import os
+import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
@@ -18,13 +19,12 @@ app.add_middleware(
 )
 
 # 2. SETUP DIRECTORIES & MOUNTING
-# Get the absolute path of the folder where main.py lives
+os.makedirs("audio", exist_ok=True)
+
+# Get the absolute path to this project folder
 base_path = os.path.dirname(os.path.abspath(__file__))
 
-# Create the physical audio folder: ./static/audio/
-os.makedirs(os.path.join(base_path, "static", "audio"), exist_ok=True)
-
-# Mount the current folder to the "/static" virtual prefix
+# Map the URL prefix "/static" to project folder
 app.mount("/static", StaticFiles(directory=base_path), name="static")
 
 # 3. LOAD DATA
@@ -39,6 +39,7 @@ except Exception as e:
 # 4. SERVE THE FRONTEND
 @app.get("/")
 async def serve_index():
+    # index.html is in the root folder
     return FileResponse('index.html')
 
 # 5. THE WORD LIST GENERATOR
@@ -57,29 +58,27 @@ async def get_word_list():
         word_text = item['word']
         example_text = item.get('example_norsk', '')
 
-        # File names
+        # Filenames
         word_filename = f"word_{word_text.lower().replace(' ', '_')}.mp3"
         ex_filename = f"ex_{word_text.lower().replace(' ', '_')}.mp3"
 
-        # Physical Paths (for Python to save/check)
-        word_path = os.path.join(base_path, "static", "audio", word_filename)
-        ex_path = os.path.join(base_path, "static", "audio", ex_filename)
+        # Physical Paths for Python (saving to the "audio" folder)
+        word_path = os.path.join("audio", word_filename)
+        ex_path = os.path.join("audio", ex_filename)
 
-        # Generate Audio if missing
+        # Generate files if missing
         if not os.path.exists(word_path):
             gTTS(text=word_text, lang='no').save(word_path)
         
         if example_text and not os.path.exists(ex_path):
             gTTS(text=example_text, lang='no').save(ex_path)
 
-        # Virtual URLs (for the Browser to find)
-        # We use /static/static/audio because our mount point is /static
-        item['audio_word'] = f"/static/static/audio/{word_filename}"
-        item['audio_example'] = f"/static/static/audio/{ex_filename}" if example_text else None
+        # Virtual URLs for the Browser
+        item['audio_word'] = f"/static/audio/{word_filename}"
+        item['audio_example'] = f"/static/audio/{ex_filename}" if example_text else None
 
     return selected_words
 
 if __name__ == "__main__":
-    import uvicorn
     port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
