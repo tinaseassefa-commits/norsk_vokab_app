@@ -17,10 +17,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 2. SETUP DIRECTORIES
-# Create the folders if they don't exist
+# 2. SETUP DIRECTORIES & MOUNTING
+# Get the absolute path of the folder where main.py lives
 base_path = os.path.dirname(os.path.abspath(__file__))
+
+# Create the physical audio folder: ./static/audio/
 os.makedirs(os.path.join(base_path, "static", "audio"), exist_ok=True)
+
+# Mount the current folder to the "/static" virtual prefix
 app.mount("/static", StaticFiles(directory=base_path), name="static")
 
 # 3. LOAD DATA
@@ -37,17 +41,15 @@ except Exception as e:
 async def serve_index():
     return FileResponse('index.html')
 
-# 5. THE NEW LIST GENERATOR (10 Words)
+# 5. THE WORD LIST GENERATOR
 @app.get("/word-list")
 async def get_word_list():
-    # Flatten all categories into a single list
     all_words = []
     for family, words in vocab_data.items():
         for w in words:
             w['family'] = family
             all_words.append(w)
     
-    # Pick 10 random words (or fewer if the list is small)
     sample_size = min(len(all_words), 10)
     selected_words = random.sample(all_words, sample_size)
     
@@ -55,27 +57,29 @@ async def get_word_list():
         word_text = item['word']
         example_text = item.get('example_norsk', '')
 
-        # Generate Audio for the WORD
+        # File names
         word_filename = f"word_{word_text.lower().replace(' ', '_')}.mp3"
-        word_path = os.path.join("static/audio", word_filename)
+        ex_filename = f"ex_{word_text.lower().replace(' ', '_')}.mp3"
+
+        # Physical Paths (for Python to save/check)
+        word_path = os.path.join(base_path, "static", "audio", word_filename)
+        ex_path = os.path.join(base_path, "static", "audio", ex_filename)
+
+        # Generate Audio if missing
         if not os.path.exists(word_path):
             gTTS(text=word_text, lang='no').save(word_path)
-        item['audio_word'] = f"/static/audio/{word_filename}"
+        
+        if example_text and not os.path.exists(ex_path):
+            gTTS(text=example_text, lang='no').save(ex_path)
 
-        # Generate Audio for the EXAMPLE
-        if example_text:
-            ex_filename = f"ex_{word_text.lower().replace(' ', '_')}.mp3"
-            ex_path = os.path.join("static/audio", ex_filename)
-            if not os.path.exists(ex_path):
-                gTTS(text=example_text, lang='no').save(ex_path)
-            item['audio_example'] = f"/static/audio/{ex_filename}"
-        else:
-            item['audio_example'] = None
+        # Virtual URLs (for the Browser to find)
+        # We use /static/static/audio because our mount point is /static
+        item['audio_word'] = f"/static/static/audio/{word_filename}"
+        item['audio_example'] = f"/static/static/audio/{ex_filename}" if example_text else None
 
     return selected_words
 
 if __name__ == "__main__":
     import uvicorn
-    # Render uses the PORT environment variable
     port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
