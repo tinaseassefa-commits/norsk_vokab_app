@@ -19,9 +19,9 @@ app.add_middleware(
 
 # 2. SETUP DIRECTORIES
 # Create the folders if they don't exist
-os.makedirs("static/audio", exist_ok=True)
-current_dir = os.path.dirname(os.path.abspath(__file__))
-app.mount("/static", StaticFiles(directory=current_dir), name="static")
+base_path = os.path.dirname(os.path.abspath(__file__))
+os.makedirs(os.path.join(base_path, "static", "audio"), exist_ok=True)
+app.mount("/static", StaticFiles(directory=base_path), name="static")
 
 # 3. LOAD DATA
 try:
