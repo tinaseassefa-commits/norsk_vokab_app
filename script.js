@@ -63,10 +63,10 @@ function renderWords() {
 // Simple play function for buttons
 function playAudio(url) {
     if (!url || url === "null") return;
-    const audio = new Audio(url);
-    audio.play().catch(e => console.error("Playback failed:", e));
+    // The browser will automatically combine your domain with this /audio/ path
+    const audio = new Audio(url); 
+    audio.play().catch(err => console.error("Error:", err));
 }
-
 // Sequential play logic
 async function playAllSequentially() {
     if (isPlaying) return;
