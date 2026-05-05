@@ -1,115 +1,141 @@
-:root {
-    --no-red: #BA0C2F;
-    --no-blue: #00205B;
-    --white: #FFFFFF;
-    --bg: #f5f7fa;
+:root { 
+    --no-red: #BA0C2F; 
+    --no-blue: #00205B; 
+    --white: #FFFFFF; 
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: var(--bg);
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin: 0;
+/* Page */
+body { 
+    font-family: 'Inter', sans-serif; 
+    background: #eef3fb; /* soft blue-gray */
+    display: flex; 
+    justify-content: center; 
+    padding: 20px; 
+    margin: 0; 
 }
 
-.container {
-    background: var(--white);
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 520px;
-    padding: 2rem;
+/* Main container */
+.container { 
+    background: #ffffff; 
+    border-radius: 20px; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08); 
+    width: 100%; 
+    max-width: 500px; 
+    padding: 2rem; 
 }
 
-h1 {
-    color: var(--no-blue);
-    text-align: center;
-    margin-bottom: 20px;
+/* Title */
+h1 { 
+    color: var(--no-blue); 
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
-.controls {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+/* Buttons row */
+.controls { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 25px; 
 }
 
-.btn-main {
-    background: var(--no-red);
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 10px;
-    cursor: pointer;
-    flex: 1;
-    font-weight: bold;
+/* Main buttons */
+.btn-main { 
+    background: var(--no-red); 
+    color: white; 
+    border: none; 
+    padding: 12px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    flex: 1; 
+    font-weight: bold; 
+    transition: all 0.2s ease;
 }
 
-.btn-main:hover {
-    opacity: 0.9;
+.btn-main:hover { 
+    opacity: 0.9; 
 }
 
-.btn-play-all {
-    background: var(--no-blue);
+.btn-play-all { 
+    background: var(--no-blue); 
 }
 
-.word-item {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 12px;
-    margin-bottom: 1rem;
+/* Word card */
+.word-item { 
+    background: #f8f9fc; 
+    padding: 1.2rem; 
+    border-radius: 14px; 
+    margin-bottom: 1rem; 
     border-left: 5px solid var(--no-red);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.word-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* Header row inside card */
 .word-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
-.norwegian-text {
-    color: var(--no-red);
-    font-size: 1.2rem;
-    font-weight: bold;
+/* Word text */
+.norwegian-text { 
+    color: var(--no-red); 
+    font-size: 1.3rem; 
+    font-weight: bold; 
 }
 
+/* Example box */
 .example-box {
-    margin-top: 10px;
-    padding: 10px;
-    background: white;
-    border-radius: 10px;
+    margin-top: 15px;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 12px;
     border-left: 4px solid var(--no-blue);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
+/* Example text */
 .ex-norsk {
     margin: 0;
     color: var(--no-blue);
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .ex-eng {
-    margin: 5px 0;
+    margin: 5px 0 10px 0;
     color: #666;
     font-style: italic;
+    font-size: 0.9rem;
 }
 
-.audio-btn {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 6px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.8rem;
+/* Audio + nav buttons */
+.audio-btn { 
+    background: #ffffff; 
+    border: 1px solid #ddd; 
+    padding: 6px 10px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    color: var(--no-blue);
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
 }
 
 .audio-btn:hover {
-    background: #eee;
+    background: #f3f4f6;
+    border-color: #bbb;
 }
 
-.status-msg {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 10px;
+/* Status text */
+.status-msg { 
+    text-align: center; 
+    font-size: 0.9rem; 
+    color: #666; 
+    margin-top: 10px; 
 }
