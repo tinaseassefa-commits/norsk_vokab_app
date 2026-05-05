@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <title>Norsk Master: Dagens Liste</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link to your CSS file -->
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
 
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
     <div class="container">
         <h1>Min Ordliste</h1>
-        
+
         <div class="controls">
             <button class="btn-main" onclick="fetchNewList()">Hent 10 Nye</button>
-            <button id="playAllBtn" class="btn-main btn-play-all" onclick="playAllSequentially()">▶️ Spill Alle</button>
+            <button class="btn-main btn-play-all" onclick="playAllSequentially()">▶️ Spill Alle</button>
         </div>
 
         <div id="word-list-container"></div>
+
         <div id="status" class="status-msg"></div>
     </div>
 
-    <!-- Link to your JS file -->
     <script src="/script.js"></script>
 </body>
 </html>

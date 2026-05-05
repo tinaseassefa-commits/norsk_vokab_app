@@ -1,0 +1,115 @@
+:root {
+    --no-red: #BA0C2F;
+    --no-blue: #00205B;
+    --white: #FFFFFF;
+    --bg: #f5f7fa;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 520px;
+    padding: 2rem;
+}
+
+h1 {
+    color: var(--no-blue);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-main {
+    background: var(--no-red);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 1;
+    font-weight: bold;
+}
+
+.btn-main:hover {
+    opacity: 0.9;
+}
+
+.btn-play-all {
+    background: var(--no-blue);
+}
+
+.word-item {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border-left: 5px solid var(--no-red);
+}
+
+.word-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.norwegian-text {
+    color: var(--no-red);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.example-box {
+    margin-top: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    border-left: 4px solid var(--no-blue);
+}
+
+.ex-norsk {
+    margin: 0;
+    color: var(--no-blue);
+    font-weight: bold;
+}
+
+.ex-eng {
+    margin: 5px 0;
+    color: #666;
+    font-style: italic;
+}
+
+.audio-btn {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.audio-btn:hover {
+    background: #eee;
+}
+
+.status-msg {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
